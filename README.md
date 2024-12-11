@@ -1,2 +1,3 @@
 # poc_everyday
-自动搜集每天的漏洞poc和exp信息。
+每日从github搜集当年的所有CVE编号，获取poc或者EXP信息。
+

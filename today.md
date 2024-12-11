@@ -1,4 +1,5 @@
-### /root/pocOrexp/daily/2024-12-10_update## CVE-2024-34102
+### ['2024-12-10']
+## CVE-2024-34102
  Adobe Commerce versions 2.4.7, 2.4.6-p5, 2.4.5-p7, 2.4.4-p8 and earlier are affected by an Improper Restriction of XML External Entity Reference ('XXE') vulnerability that could result in arbitrary code execution. An attacker could exploit this vulnerability by sending a crafted XML document that references external entities. Exploitation of this issue does not require user interaction.
 
 - [https://github.com/Chocapikk/CVE-2024-34102](https://github.com/Chocapikk/CVE-2024-34102) :  
@@ -111,7 +112,8 @@
 ![forks](https://img.shields.io/github/forks/wubinworks/magento2-jwt-auth-patch.svg) 
 2024-12-10T05:45:31Z
 
-### /root/pocOrexp/daily/2024-12-09_update## CVE-2024-48990
+### ['2024-12-09']
+## CVE-2024-48990
  Qualys discovered that needrestart, before version 3.8, allows local attackers to execute arbitrary code as root by tricking needrestart into running the Python interpreter with an attacker-controlled PYTHONPATH environment variable.
 
 - [https://github.com/makuga01/CVE-2024-48990-PoC](https://github.com/makuga01/CVE-2024-48990-PoC) :  
@@ -594,7 +596,8 @@
 ![forks](https://img.shields.io/github/forks/nexussecelite/EvilDroid.svg) 
 2024-08-05T14:13:18Z
 
-### /root/pocOrexp/daily/2024-12-08_update## CVE-2024-42327
+### ['2024-12-08']
+## CVE-2024-42327
  A non-admin user account on the Zabbix frontend with the default User role, or with any other role that gives API access can exploit this vulnerability. An SQLi exists in the CUser class in the addRelatedObjects function, this function is being called from the CUser.get function which is available for every user who has API access.
 
 - [https://github.com/aramosf/cve-2024-42327](https://github.com/aramosf/cve-2024-42327) :  
@@ -826,7 +829,8 @@
 ![forks](https://img.shields.io/github/forks/Piyush-Bhor/CVE-2024-11393.svg) 
 2024-12-08T00:31:25Z
 
-### /root/pocOrexp/daily/2024-12-07_update## CVE-2024-50677
+### ['2024-12-07']
+## CVE-2024-50677
  A cross-site scripting (XSS) vulnerability in OroPlatform CMS v5.1 allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the Search parameter.
 
 - [https://github.com/ZumiYumi/CVE-2024-50677](https://github.com/ZumiYumi/CVE-2024-50677) :  
@@ -4166,7 +4170,8 @@
 ![forks](https://img.shields.io/github/forks/kevincoakley/puppet-spectre_meltdown.svg) 
 2018-11-26T23:37:05Z
 
-### /root/pocOrexp/daily/2024-12-06_update## CVE-2024-54679
+### ['2024-12-06']
+## CVE-2024-54679
  CyberPanel (aka Cyber Panel) before 6778ad1 does not require the FilemanagerAdmin capability for restartMySQL actions.
 
 - [https://github.com/hotplugin0x01/CVE-2024-54679](https://github.com/hotplugin0x01/CVE-2024-54679) :  
@@ -6242,7 +6247,8 @@
 ![forks](https://img.shields.io/github/forks/BBge/CVE-2018-17240.svg) 
 2022-06-10T04:39:45Z
 
-### /root/pocOrexp/daily/2024-12-05_update## CVE-2024-41713
+### ['2024-12-05']
+## CVE-2024-41713
  A vulnerability in the NuPoint Unified Messaging (NPM) component of Mitel MiCollab through 9.8 SP1 FP2 (9.8.1.201) could allow an unauthenticated attacker to conduct a path traversal attack, due to insufficient input validation. A successful exploit could allow unauthorized access, enabling the attacker to view, corrupt, or delete users' data and system configurations.
 
 - [https://github.com/watchtowrlabs/Mitel-MiCollab-Auth-Bypass_CVE-2024-41713](https://github.com/watchtowrlabs/Mitel-MiCollab-Auth-Bypass_CVE-2024-41713) :  
@@ -6446,7 +6452,8 @@
 ![forks](https://img.shields.io/github/forks/fastify/send.svg) 
 2024-12-05T14:23:30Z
 
-### /root/pocOrexp/daily/2024-12-04_update## CVE-2024-53259
+### ['2024-12-04']
+## CVE-2024-53259
  quic-go is an implementation of the QUIC protocol in Go. An off-path attacker can inject an ICMP Packet Too Large packet. Since affected quic-go versions used IP_PMTUDISC_DO, the kernel would then return a "message too large" error on sendmsg, i.e. when quic-go attempts to send a packet that exceeds the MTU claimed in that ICMP packet. By setting this value to smaller than 1200 bytes (the minimum MTU for QUIC), the attacker can disrupt a QUIC connection. Crucially, this can be done after completion of the handshake, thereby circumventing any TCP fallback that might be implemented on the application layer (for example, many browsers fall back to HTTP over TCP if they're unable to establish a QUIC connection). The attacker needs to at least know the client's IP and port tuple to mount an attack. This vulnerability is fixed in 0.48.2.
 
 - [https://github.com/kota-yata/cve-2024-53259](https://github.com/kota-yata/cve-2024-53259) :  
@@ -7291,7 +7298,8 @@
 ![forks](https://img.shields.io/github/forks/c0r0n3r/dheater.svg) 
 2024-12-04T13:06:28Z
 
-### /root/pocOrexp/daily/2024-12-03_update## CVE-2024-52940
+### ['2024-12-03']
+## CVE-2024-52940
  AnyDesk through 8.1.0 on Windows, when Allow Direct Connections is enabled, inadvertently exposes a public IP address within network traffic. The attacker must know the victim's AnyDesk ID.
 
 - [https://github.com/ebrasha/abdal-anydesk-remote-ip-detector](https://github.com/ebrasha/abdal-anydesk-remote-ip-detector) :  
@@ -8248,7 +8256,8 @@
 ![forks](https://img.shields.io/github/forks/DanielAzulayy/CTF-2021.svg) 
 2021-03-05T16:22:09Z
 
-### /root/pocOrexp/daily/2024-12-02_update## CVE-2024-45216
+### ['2024-12-02']
+## CVE-2024-45216
  Improper Authentication vulnerability in Apache Solr.Solr instances using the PKIAuthenticationPlugin, which is enabled by default when Solr Authentication is used, are vulnerable to Authentication bypass.A fake ending at the end of any Solr API URL path, will allow requests to skip Authentication while maintaining the API contract with the original URL Path.This fake ending looks like an unprotected API path, however it is stripped off internally after authentication but before API routing.This issue affects Apache Solr: from 5.3.0 before 8.11.4, from 9.0.0 before 9.7.0.Users are recommended to upgrade to version 9.7.0, or 8.11.4, which fix the issue.
 
 - [https://github.com/congdong007/CVE-2024-45216-Poc](https://github.com/congdong007/CVE-2024-45216-Poc) :  
@@ -8741,7 +8750,8 @@
 ![forks](https://img.shields.io/github/forks/bassitone/OpenSSH-User-Enumeration.svg) 
 2016-07-26T21:37:26Z
 
-### /root/pocOrexp/daily/2024-12-01_update## CVE-2024-22734
+### ['2024-12-01']
+## CVE-2024-22734
  An issue was discovered in AMCS Group Trux Waste Management Software before version 7.19.0018.26912, allows local attackers to obtain sensitive information via a static, hard-coded AES Key-IV pair in the TxUtilities.dll and TruxUser.cfg components.
 
 - [https://github.com/securekomodo/CVE-2024-22734](https://github.com/securekomodo/CVE-2024-22734) :  

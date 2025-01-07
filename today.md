@@ -1,350 +1,226 @@
-# 2025-01-06
-## CVE-2024-56512
- Apache NiFi 1.10.0 through 2.0.0 are missing fine-grained authorization checking for Parameter Contexts, referenced Controller Services, and referenced Parameter Providers, when creating new Process Groups.Creating a new Process Group can include binding to a Parameter Context, but in cases where the Process Group did not reference any Parameter values, the framework did not check user authorization for the bound Parameter Context. Missing authorization for a bound Parameter Context enabled clients to download non-sensitive Parameter values after creating the Process Group.Creating a new Process Group can also include referencing existing Controller Services or Parameter Providers. The framework did not check user authorization for referenced Controller Services or Parameter Providers, enabling clients to create Process Groups and use these components that were otherwise unauthorized.This vulnerability is limited in scope to authenticated users authorized to create Process Groups. The scope is further limited to deployments with component-based authorization policies. Upgrading to Apache NiFi 2.1.0 is the recommended mitigation, which includes authorization checking for Parameter and Controller Service references on Process Group creation.
-
-- [https://github.com/absholi7ly/CVE-2024-56512-Apache-NiFi-Exploit](https://github.com/absholi7ly/CVE-2024-56512-Apache-NiFi-Exploit) :  
-![starts](https://img.shields.io/github/stars/absholi7ly/CVE-2024-56512-Apache-NiFi-Exploit.svg) 
-![forks](https://img.shields.io/github/forks/absholi7ly/CVE-2024-56512-Apache-NiFi-Exploit.svg) 
-2025-01-06T17:51:38Z
-
-## CVE-2024-56433
- shadow-utils (aka shadow) 4.4 through 4.17.0 establishes a default /etc/subuid behavior (e.g., uid 100000 through 165535 for the first user account) that can realistically conflict with the uids of users defined on locally administered networks, potentially leading to account takeover, e.g., by leveraging newuidmap for access to an NFS home directory (or same-host resources in the case of remote logins by these local network users). NOTE: it may also be argued that system administrators should not have assigned uids, within local networks, that are within the range that can occur in /etc/subuid.
-
-- [https://github.com/JonnyWhatshisface/CVE-2024-56433](https://github.com/JonnyWhatshisface/CVE-2024-56433) :  
-![starts](https://img.shields.io/github/stars/JonnyWhatshisface/CVE-2024-56433.svg) 
-![forks](https://img.shields.io/github/forks/JonnyWhatshisface/CVE-2024-56433.svg) 
-2025-01-06T12:02:39Z
-
-## CVE-2024-49113
- Windows Lightweight Directory Access Protocol (LDAP) Denial of Service Vulnerability
-
-- [https://github.com/SafeBreach-Labs/CVE-2024-49113](https://github.com/SafeBreach-Labs/CVE-2024-49113) :  
-![starts](https://img.shields.io/github/stars/SafeBreach-Labs/CVE-2024-49113.svg) 
-![forks](https://img.shields.io/github/forks/SafeBreach-Labs/CVE-2024-49113.svg) 
-2025-01-02T16:07:23Z
-
-- [https://github.com/barcrange/CVE-2024-49113-Checker](https://github.com/barcrange/CVE-2024-49113-Checker) :  
-![starts](https://img.shields.io/github/stars/barcrange/CVE-2024-49113-Checker.svg) 
-![forks](https://img.shields.io/github/forks/barcrange/CVE-2024-49113-Checker.svg) 
-2025-01-03T08:20:03Z
-
-- [https://github.com/YoonJae-rep/CVE-2024-49113](https://github.com/YoonJae-rep/CVE-2024-49113) :  
-![starts](https://img.shields.io/github/stars/YoonJae-rep/CVE-2024-49113.svg) 
-![forks](https://img.shields.io/github/forks/YoonJae-rep/CVE-2024-49113.svg) 
-2025-01-06T08:04:45Z
-
-- [https://github.com/Sachinart/CVE-2024-49113-Checker](https://github.com/Sachinart/CVE-2024-49113-Checker) :  
-![starts](https://img.shields.io/github/stars/Sachinart/CVE-2024-49113-Checker.svg) 
-![forks](https://img.shields.io/github/forks/Sachinart/CVE-2024-49113-Checker.svg) 
-2025-01-06T12:04:02Z
-
-## CVE-2024-3094
- Malicious code was discovered in the upstream tarballs of xz, starting with version 5.6.0. Through a series of complex obfuscations, the liblzma build process extracts a prebuilt object file from a disguised test file existing in the source code, which is then used to modify specific functions in the liblzma code. This results in a modified liblzma library that can be used by any software linked against this library, intercepting and modifying the data interaction with this library.
-
-- [https://github.com/amlweems/xzbot](https://github.com/amlweems/xzbot) :  
-![starts](https://img.shields.io/github/stars/amlweems/xzbot.svg) 
-![forks](https://img.shields.io/github/forks/amlweems/xzbot.svg) 
-2024-04-03T04:58:50Z
-
-- [https://github.com/lockness-Ko/xz-vulnerable-honeypot](https://github.com/lockness-Ko/xz-vulnerable-honeypot) :  
-![starts](https://img.shields.io/github/stars/lockness-Ko/xz-vulnerable-honeypot.svg) 
-![forks](https://img.shields.io/github/forks/lockness-Ko/xz-vulnerable-honeypot.svg) 
-2024-04-02T03:38:32Z
-
-- [https://github.com/FabioBaroni/CVE-2024-3094-checker](https://github.com/FabioBaroni/CVE-2024-3094-checker) :  
-![starts](https://img.shields.io/github/stars/FabioBaroni/CVE-2024-3094-checker.svg) 
-![forks](https://img.shields.io/github/forks/FabioBaroni/CVE-2024-3094-checker.svg) 
-2024-03-31T00:13:39Z
-
-- [https://github.com/byinarie/CVE-2024-3094-info](https://github.com/byinarie/CVE-2024-3094-info) :  
-![starts](https://img.shields.io/github/stars/byinarie/CVE-2024-3094-info.svg) 
-![forks](https://img.shields.io/github/forks/byinarie/CVE-2024-3094-info.svg) 
-2024-04-01T16:01:34Z
-
-- [https://github.com/jfrog/cve-2024-3094-tools](https://github.com/jfrog/cve-2024-3094-tools) :  
-![starts](https://img.shields.io/github/stars/jfrog/cve-2024-3094-tools.svg) 
-![forks](https://img.shields.io/github/forks/jfrog/cve-2024-3094-tools.svg) 
-2024-04-07T13:07:44Z
-
-- [https://github.com/alokemajumder/CVE-2024-3094-Vulnerability-Checker-Fixer](https://github.com/alokemajumder/CVE-2024-3094-Vulnerability-Checker-Fixer) :  
-![starts](https://img.shields.io/github/stars/alokemajumder/CVE-2024-3094-Vulnerability-Checker-Fixer.svg) 
-![forks](https://img.shields.io/github/forks/alokemajumder/CVE-2024-3094-Vulnerability-Checker-Fixer.svg) 
-2024-04-07T07:40:48Z
-
-- [https://github.com/0xlane/xz-cve-2024-3094](https://github.com/0xlane/xz-cve-2024-3094) :  
-![starts](https://img.shields.io/github/stars/0xlane/xz-cve-2024-3094.svg) 
-![forks](https://img.shields.io/github/forks/0xlane/xz-cve-2024-3094.svg) 
-2024-04-02T07:12:53Z
-
-- [https://github.com/robertdfrench/ifuncd-up](https://github.com/robertdfrench/ifuncd-up) :  
-![starts](https://img.shields.io/github/stars/robertdfrench/ifuncd-up.svg) 
-![forks](https://img.shields.io/github/forks/robertdfrench/ifuncd-up.svg) 
-2024-09-04T04:32:15Z
-
-- [https://github.com/teyhouse/CVE-2024-3094](https://github.com/teyhouse/CVE-2024-3094) :  
-![starts](https://img.shields.io/github/stars/teyhouse/CVE-2024-3094.svg) 
-![forks](https://img.shields.io/github/forks/teyhouse/CVE-2024-3094.svg) 
-2024-03-31T14:36:00Z
-
-- [https://github.com/emirkmo/xz-backdoor-github](https://github.com/emirkmo/xz-backdoor-github) :  
-![starts](https://img.shields.io/github/stars/emirkmo/xz-backdoor-github.svg) 
-![forks](https://img.shields.io/github/forks/emirkmo/xz-backdoor-github.svg) 
-2024-04-01T15:12:50Z
-
-- [https://github.com/r0binak/xzk8s](https://github.com/r0binak/xzk8s) :  
-![starts](https://img.shields.io/github/stars/r0binak/xzk8s.svg) 
-![forks](https://img.shields.io/github/forks/r0binak/xzk8s.svg) 
-2024-04-06T16:09:56Z
-
-- [https://github.com/XiaomingX/cve-2024-3094-xz-backdoor-exploit](https://github.com/XiaomingX/cve-2024-3094-xz-backdoor-exploit) :  
-![starts](https://img.shields.io/github/stars/XiaomingX/cve-2024-3094-xz-backdoor-exploit.svg) 
-![forks](https://img.shields.io/github/forks/XiaomingX/cve-2024-3094-xz-backdoor-exploit.svg) 
-2024-12-01T05:30:15Z
-
-- [https://github.com/wgetnz/CVE-2024-3094-check](https://github.com/wgetnz/CVE-2024-3094-check) :  
-![starts](https://img.shields.io/github/stars/wgetnz/CVE-2024-3094-check.svg) 
-![forks](https://img.shields.io/github/forks/wgetnz/CVE-2024-3094-check.svg) 
-2024-03-30T08:08:40Z
-
-- [https://github.com/Hacker-Hermanos/CVE-2024-3094_xz_check](https://github.com/Hacker-Hermanos/CVE-2024-3094_xz_check) :  
-![starts](https://img.shields.io/github/stars/Hacker-Hermanos/CVE-2024-3094_xz_check.svg) 
-![forks](https://img.shields.io/github/forks/Hacker-Hermanos/CVE-2024-3094_xz_check.svg) 
-2024-03-30T05:21:13Z
-
-- [https://github.com/robertdebock/ansible-role-cve_2024_3094](https://github.com/robertdebock/ansible-role-cve_2024_3094) :  
-![starts](https://img.shields.io/github/stars/robertdebock/ansible-role-cve_2024_3094.svg) 
-![forks](https://img.shields.io/github/forks/robertdebock/ansible-role-cve_2024_3094.svg) 
-2025-01-06T08:54:55Z
-
-- [https://github.com/badsectorlabs/ludus_xz_backdoor](https://github.com/badsectorlabs/ludus_xz_backdoor) :  
-![starts](https://img.shields.io/github/stars/badsectorlabs/ludus_xz_backdoor.svg) 
-![forks](https://img.shields.io/github/forks/badsectorlabs/ludus_xz_backdoor.svg) 
-2024-04-05T02:36:41Z
-
-- [https://github.com/Yuma-Tsushima07/CVE-2024-3094](https://github.com/Yuma-Tsushima07/CVE-2024-3094) :  
-![starts](https://img.shields.io/github/stars/Yuma-Tsushima07/CVE-2024-3094.svg) 
-![forks](https://img.shields.io/github/forks/Yuma-Tsushima07/CVE-2024-3094.svg) 
-2024-03-31T11:02:02Z
-
-- [https://github.com/crfearnworks/ansible-CVE-2024-3094](https://github.com/crfearnworks/ansible-CVE-2024-3094) :  
-![starts](https://img.shields.io/github/stars/crfearnworks/ansible-CVE-2024-3094.svg) 
-![forks](https://img.shields.io/github/forks/crfearnworks/ansible-CVE-2024-3094.svg) 
-2024-04-04T18:46:34Z
-
-- [https://github.com/neuralinhibitor/xzwhy](https://github.com/neuralinhibitor/xzwhy) :  
-![starts](https://img.shields.io/github/stars/neuralinhibitor/xzwhy.svg) 
-![forks](https://img.shields.io/github/forks/neuralinhibitor/xzwhy.svg) 
-2024-04-18T15:09:42Z
-
-- [https://github.com/gustavorobertux/CVE-2024-3094](https://github.com/gustavorobertux/CVE-2024-3094) :  
-![starts](https://img.shields.io/github/stars/gustavorobertux/CVE-2024-3094.svg) 
-![forks](https://img.shields.io/github/forks/gustavorobertux/CVE-2024-3094.svg) 
-2024-04-02T10:39:09Z
-
-- [https://github.com/felipecosta09/cve-2024-3094](https://github.com/felipecosta09/cve-2024-3094) :  
-![starts](https://img.shields.io/github/stars/felipecosta09/cve-2024-3094.svg) 
-![forks](https://img.shields.io/github/forks/felipecosta09/cve-2024-3094.svg) 
-2024-04-05T10:50:45Z
-
-- [https://github.com/pentestfunctions/CVE-2024-3094](https://github.com/pentestfunctions/CVE-2024-3094) :  
-![starts](https://img.shields.io/github/stars/pentestfunctions/CVE-2024-3094.svg) 
-![forks](https://img.shields.io/github/forks/pentestfunctions/CVE-2024-3094.svg) 
-2024-04-02T09:11:43Z
-
-- [https://github.com/lypd0/CVE-2024-3094-Vulnerabity-Checker](https://github.com/lypd0/CVE-2024-3094-Vulnerabity-Checker) :  
-![starts](https://img.shields.io/github/stars/lypd0/CVE-2024-3094-Vulnerabity-Checker.svg) 
-![forks](https://img.shields.io/github/forks/lypd0/CVE-2024-3094-Vulnerabity-Checker.svg) 
-2024-03-29T21:56:17Z
-
-- [https://github.com/ScrimForever/CVE-2024-3094](https://github.com/ScrimForever/CVE-2024-3094) :  
-![starts](https://img.shields.io/github/stars/ScrimForever/CVE-2024-3094.svg) 
-![forks](https://img.shields.io/github/forks/ScrimForever/CVE-2024-3094.svg) 
-2024-04-02T03:38:30Z
-
-- [https://github.com/Horizon-Software-Development/CVE-2024-3094](https://github.com/Horizon-Software-Development/CVE-2024-3094) :  
-![starts](https://img.shields.io/github/stars/Horizon-Software-Development/CVE-2024-3094.svg) 
-![forks](https://img.shields.io/github/forks/Horizon-Software-Development/CVE-2024-3094.svg) 
-2024-03-30T20:16:43Z
-
-- [https://github.com/Bella-Bc/xz-backdoor-CVE-2024-3094-Check](https://github.com/Bella-Bc/xz-backdoor-CVE-2024-3094-Check) :  
-![starts](https://img.shields.io/github/stars/Bella-Bc/xz-backdoor-CVE-2024-3094-Check.svg) 
-![forks](https://img.shields.io/github/forks/Bella-Bc/xz-backdoor-CVE-2024-3094-Check.svg) 
-2024-04-03T14:02:00Z
-
-- [https://github.com/przemoc/xz-backdoor-links](https://github.com/przemoc/xz-backdoor-links) :  
-![starts](https://img.shields.io/github/stars/przemoc/xz-backdoor-links.svg) 
-![forks](https://img.shields.io/github/forks/przemoc/xz-backdoor-links.svg) 
-2024-04-20T14:28:16Z
-
-- [https://github.com/DANO-AMP/CVE-2024-3094](https://github.com/DANO-AMP/CVE-2024-3094) :  
-![starts](https://img.shields.io/github/stars/DANO-AMP/CVE-2024-3094.svg) 
-![forks](https://img.shields.io/github/forks/DANO-AMP/CVE-2024-3094.svg) 
-2024-07-05T12:03:22Z
-
-- [https://github.com/galacticquest/cve-2024-3094-detect](https://github.com/galacticquest/cve-2024-3094-detect) :  
-![starts](https://img.shields.io/github/stars/galacticquest/cve-2024-3094-detect.svg) 
-![forks](https://img.shields.io/github/forks/galacticquest/cve-2024-3094-detect.svg) 
-2024-04-01T03:09:45Z
-
-- [https://github.com/robertdebock/ansible-playbook-cve-2024-3094](https://github.com/robertdebock/ansible-playbook-cve-2024-3094) :  
-![starts](https://img.shields.io/github/stars/robertdebock/ansible-playbook-cve-2024-3094.svg) 
-![forks](https://img.shields.io/github/forks/robertdebock/ansible-playbook-cve-2024-3094.svg) 
-2024-04-05T11:12:47Z
-
-- [https://github.com/Security-Phoenix-demo/CVE-2024-3094-fix-exploits](https://github.com/Security-Phoenix-demo/CVE-2024-3094-fix-exploits) :  
-![starts](https://img.shields.io/github/stars/Security-Phoenix-demo/CVE-2024-3094-fix-exploits.svg) 
-![forks](https://img.shields.io/github/forks/Security-Phoenix-demo/CVE-2024-3094-fix-exploits.svg) 
-2024-04-03T07:57:30Z
-
-- [https://github.com/brinhosa/CVE-2024-3094-One-Liner](https://github.com/brinhosa/CVE-2024-3094-One-Liner) :  
-![starts](https://img.shields.io/github/stars/brinhosa/CVE-2024-3094-One-Liner.svg) 
-![forks](https://img.shields.io/github/forks/brinhosa/CVE-2024-3094-One-Liner.svg) 
-2024-04-01T12:09:12Z
-
-- [https://github.com/isuruwa/CVE-2024-3094](https://github.com/isuruwa/CVE-2024-3094) :  
-![starts](https://img.shields.io/github/stars/isuruwa/CVE-2024-3094.svg) 
-![forks](https://img.shields.io/github/forks/isuruwa/CVE-2024-3094.svg) 
-2024-03-31T05:31:44Z
-
-- [https://github.com/mesutgungor/xz-backdoor-vulnerability](https://github.com/mesutgungor/xz-backdoor-vulnerability) :  
-![starts](https://img.shields.io/github/stars/mesutgungor/xz-backdoor-vulnerability.svg) 
-![forks](https://img.shields.io/github/forks/mesutgungor/xz-backdoor-vulnerability.svg) 
-2024-04-01T09:18:08Z
-
-- [https://github.com/bsekercioglu/cve2024-3094-Checker](https://github.com/bsekercioglu/cve2024-3094-Checker) :  
-![starts](https://img.shields.io/github/stars/bsekercioglu/cve2024-3094-Checker.svg) 
-![forks](https://img.shields.io/github/forks/bsekercioglu/cve2024-3094-Checker.svg) 
-2024-03-30T11:59:18Z
-
-- [https://github.com/bioless/xz_cve-2024-3094_detection](https://github.com/bioless/xz_cve-2024-3094_detection) :  
-![starts](https://img.shields.io/github/stars/bioless/xz_cve-2024-3094_detection.svg) 
-![forks](https://img.shields.io/github/forks/bioless/xz_cve-2024-3094_detection.svg) 
-2024-03-29T23:23:12Z
-
-- [https://github.com/devjanger/CVE-2024-3094-XZ-Backdoor-Detector](https://github.com/devjanger/CVE-2024-3094-XZ-Backdoor-Detector) :  
-![starts](https://img.shields.io/github/stars/devjanger/CVE-2024-3094-XZ-Backdoor-Detector.svg) 
-![forks](https://img.shields.io/github/forks/devjanger/CVE-2024-3094-XZ-Backdoor-Detector.svg) 
-2024-04-02T02:24:48Z
-
-- [https://github.com/reuteras/CVE-2024-3094](https://github.com/reuteras/CVE-2024-3094) :  
-![starts](https://img.shields.io/github/stars/reuteras/CVE-2024-3094.svg) 
-![forks](https://img.shields.io/github/forks/reuteras/CVE-2024-3094.svg) 
-2024-05-05T08:53:07Z
-
-- [https://github.com/ashwani95/CVE-2024-3094](https://github.com/ashwani95/CVE-2024-3094) :  
-![starts](https://img.shields.io/github/stars/ashwani95/CVE-2024-3094.svg) 
-![forks](https://img.shields.io/github/forks/ashwani95/CVE-2024-3094.svg) 
-2024-03-30T17:00:39Z
-
-- [https://github.com/Fractal-Tess/CVE-2024-3094](https://github.com/Fractal-Tess/CVE-2024-3094) :  
-![starts](https://img.shields.io/github/stars/Fractal-Tess/CVE-2024-3094.svg) 
-![forks](https://img.shields.io/github/forks/Fractal-Tess/CVE-2024-3094.svg) 
-2024-03-30T00:34:06Z
-
-- [https://github.com/Mustafa1986/CVE-2024-3094](https://github.com/Mustafa1986/CVE-2024-3094) :  
-![starts](https://img.shields.io/github/stars/Mustafa1986/CVE-2024-3094.svg) 
-![forks](https://img.shields.io/github/forks/Mustafa1986/CVE-2024-3094.svg) 
-2024-04-01T05:49:08Z
-
-- [https://github.com/mightysai1997/CVE-2024-3094](https://github.com/mightysai1997/CVE-2024-3094) :  
-![starts](https://img.shields.io/github/stars/mightysai1997/CVE-2024-3094.svg) 
-![forks](https://img.shields.io/github/forks/mightysai1997/CVE-2024-3094.svg) 
-2024-04-01T09:06:34Z
-
-- [https://github.com/dah4k/CVE-2024-3094](https://github.com/dah4k/CVE-2024-3094) :  
-![starts](https://img.shields.io/github/stars/dah4k/CVE-2024-3094.svg) 
-![forks](https://img.shields.io/github/forks/dah4k/CVE-2024-3094.svg) 
-2024-04-01T18:17:23Z
-
-- [https://github.com/shefirot/CVE-2024-3094](https://github.com/shefirot/CVE-2024-3094) :  
-![starts](https://img.shields.io/github/stars/shefirot/CVE-2024-3094.svg) 
-![forks](https://img.shields.io/github/forks/shefirot/CVE-2024-3094.svg) 
-2024-06-11T14:21:20Z
-
-- [https://github.com/Simplifi-ED/CVE-2024-3094-patcher](https://github.com/Simplifi-ED/CVE-2024-3094-patcher) :  
-![starts](https://img.shields.io/github/stars/Simplifi-ED/CVE-2024-3094-patcher.svg) 
-![forks](https://img.shields.io/github/forks/Simplifi-ED/CVE-2024-3094-patcher.svg) 
-2024-03-31T15:36:28Z
-
-- [https://github.com/ackemed/detectar_cve-2024-3094](https://github.com/ackemed/detectar_cve-2024-3094) :  
-![starts](https://img.shields.io/github/stars/ackemed/detectar_cve-2024-3094.svg) 
-![forks](https://img.shields.io/github/forks/ackemed/detectar_cve-2024-3094.svg) 
-2024-04-01T23:04:46Z
-
-- [https://github.com/TheTorjanCaptain/CVE-2024-3094-Checker](https://github.com/TheTorjanCaptain/CVE-2024-3094-Checker) :  
-![starts](https://img.shields.io/github/stars/TheTorjanCaptain/CVE-2024-3094-Checker.svg) 
-![forks](https://img.shields.io/github/forks/TheTorjanCaptain/CVE-2024-3094-Checker.svg) 
-2024-04-03T19:36:30Z
-
-- [https://github.com/mightysai1997/CVE-2024-3094-info](https://github.com/mightysai1997/CVE-2024-3094-info) :  
-![starts](https://img.shields.io/github/stars/mightysai1997/CVE-2024-3094-info.svg) 
-![forks](https://img.shields.io/github/forks/mightysai1997/CVE-2024-3094-info.svg) 
-2024-04-01T09:05:59Z
-
-- [https://github.com/hazemkya/CVE-2024-3094-checker](https://github.com/hazemkya/CVE-2024-3094-checker) :  
-![starts](https://img.shields.io/github/stars/hazemkya/CVE-2024-3094-checker.svg) 
-![forks](https://img.shields.io/github/forks/hazemkya/CVE-2024-3094-checker.svg) 
-2024-03-31T00:40:48Z
-
-- [https://github.com/iheb2b/CVE-2024-3094-Checker](https://github.com/iheb2b/CVE-2024-3094-Checker) :  
-![starts](https://img.shields.io/github/stars/iheb2b/CVE-2024-3094-Checker.svg) 
-![forks](https://img.shields.io/github/forks/iheb2b/CVE-2024-3094-Checker.svg) 
-2024-04-06T22:15:00Z
-
-- [https://github.com/OpensourceICTSolutions/xz_utils-CVE-2024-3094](https://github.com/OpensourceICTSolutions/xz_utils-CVE-2024-3094) :  
-![starts](https://img.shields.io/github/stars/OpensourceICTSolutions/xz_utils-CVE-2024-3094.svg) 
-![forks](https://img.shields.io/github/forks/OpensourceICTSolutions/xz_utils-CVE-2024-3094.svg) 
-2024-03-29T21:42:42Z
-
-- [https://github.com/MrBUGLF/XZ-Utils_CVE-2024-3094](https://github.com/MrBUGLF/XZ-Utils_CVE-2024-3094) :  
-![starts](https://img.shields.io/github/stars/MrBUGLF/XZ-Utils_CVE-2024-3094.svg) 
-![forks](https://img.shields.io/github/forks/MrBUGLF/XZ-Utils_CVE-2024-3094.svg) 
-2024-04-01T02:03:36Z
-
-- [https://github.com/buluma/ansible-role-cve_2024_3094](https://github.com/buluma/ansible-role-cve_2024_3094) :  
-![starts](https://img.shields.io/github/stars/buluma/ansible-role-cve_2024_3094.svg) 
-![forks](https://img.shields.io/github/forks/buluma/ansible-role-cve_2024_3094.svg) 
-2024-07-19T00:14:02Z
-
-- [https://github.com/gayatriracha/CVE-2024-3094-Nmap-NSE-script](https://github.com/gayatriracha/CVE-2024-3094-Nmap-NSE-script) :  
-![starts](https://img.shields.io/github/stars/gayatriracha/CVE-2024-3094-Nmap-NSE-script.svg) 
-![forks](https://img.shields.io/github/forks/gayatriracha/CVE-2024-3094-Nmap-NSE-script.svg) 
-2024-03-31T17:56:48Z
-
-- [https://github.com/MagpieRYL/CVE-2024-3094-backdoor-env-container](https://github.com/MagpieRYL/CVE-2024-3094-backdoor-env-container) :  
-![starts](https://img.shields.io/github/stars/MagpieRYL/CVE-2024-3094-backdoor-env-container.svg) 
-![forks](https://img.shields.io/github/forks/MagpieRYL/CVE-2024-3094-backdoor-env-container.svg) 
-2024-04-03T13:05:40Z
-
-- [https://github.com/weltregie/liblzma-scan](https://github.com/weltregie/liblzma-scan) :  
-![starts](https://img.shields.io/github/stars/weltregie/liblzma-scan.svg) 
-![forks](https://img.shields.io/github/forks/weltregie/liblzma-scan.svg) 
-2024-04-04T11:36:09Z
-
-- [https://github.com/AndreaCicca/Sicurezza-Informatica-Presentazione](https://github.com/AndreaCicca/Sicurezza-Informatica-Presentazione) :  
-![starts](https://img.shields.io/github/stars/AndreaCicca/Sicurezza-Informatica-Presentazione.svg) 
-![forks](https://img.shields.io/github/forks/AndreaCicca/Sicurezza-Informatica-Presentazione.svg) 
-2024-06-07T07:26:21Z
-
-- [https://github.com/hackingetico21/revisaxzutils](https://github.com/hackingetico21/revisaxzutils) :  
-![starts](https://img.shields.io/github/stars/hackingetico21/revisaxzutils.svg) 
-![forks](https://img.shields.io/github/forks/hackingetico21/revisaxzutils.svg) 
-2024-04-02T01:28:41Z
-
-- [https://github.com/fevar54/Detectar-Backdoor-en-liblzma-de-XZ-utils-CVE-2024-3094-](https://github.com/fevar54/Detectar-Backdoor-en-liblzma-de-XZ-utils-CVE-2024-3094-) :  
-![starts](https://img.shields.io/github/stars/fevar54/Detectar-Backdoor-en-liblzma-de-XZ-utils-CVE-2024-3094-.svg) 
-![forks](https://img.shields.io/github/forks/fevar54/Detectar-Backdoor-en-liblzma-de-XZ-utils-CVE-2024-3094-.svg) 
-2024-04-13T16:46:19Z
-
-- [https://github.com/Juul/xz-backdoor-scan](https://github.com/Juul/xz-backdoor-scan) :  
-![starts](https://img.shields.io/github/stars/Juul/xz-backdoor-scan.svg) 
-![forks](https://img.shields.io/github/forks/Juul/xz-backdoor-scan.svg) 
-2024-04-07T05:37:08Z
-
-- [https://github.com/harekrishnarai/xz-utils-vuln-checker](https://github.com/harekrishnarai/xz-utils-vuln-checker) :  
-![starts](https://img.shields.io/github/stars/harekrishnarai/xz-utils-vuln-checker.svg) 
-![forks](https://img.shields.io/github/forks/harekrishnarai/xz-utils-vuln-checker.svg) 
-2024-03-30T17:43:37Z
+# 2025-01-07
+## CVE-2024-53677
+ File upload logic in Apache Struts is flawed.An attacker can manipulate file upload params to enable paths traversal and under some circumstances this can lead to uploading a malicious file which can be used to perform Remote Code Execution.This issue affects Apache Struts: from 2.0.0 before 6.4.0.Users are recommended to upgrade to version 6.4.0 at least and migrate to the new  file upload mechanism https://struts.apache.org/core-developers/file-upload . If you are not using an old file upload logic based onFileuploadInterceptoryour application is safe.You can find more details in https://cwiki.apache.org/confluence/display/WW/S2-067
+
+- [https://github.com/TAM-K592/CVE-2024-53677-S2-067](https://github.com/TAM-K592/CVE-2024-53677-S2-067) :  
+![starts](https://img.shields.io/github/stars/TAM-K592/CVE-2024-53677-S2-067.svg) 
+![forks](https://img.shields.io/github/forks/TAM-K592/CVE-2024-53677-S2-067.svg) 
+2024-12-20T10:05:15Z
+
+- [https://github.com/cloudwafs/s2-067-CVE-2024-53677](https://github.com/cloudwafs/s2-067-CVE-2024-53677) :  
+![starts](https://img.shields.io/github/stars/cloudwafs/s2-067-CVE-2024-53677.svg) 
+![forks](https://img.shields.io/github/forks/cloudwafs/s2-067-CVE-2024-53677.svg) 
+2024-12-17T10:37:17Z
+
+- [https://github.com/XiaomingX/CVE-2024-53677-S2-067](https://github.com/XiaomingX/CVE-2024-53677-S2-067) :  
+![starts](https://img.shields.io/github/stars/XiaomingX/CVE-2024-53677-S2-067.svg) 
+![forks](https://img.shields.io/github/forks/XiaomingX/CVE-2024-53677-S2-067.svg) 
+2024-12-18T02:08:09Z
+
+- [https://github.com/EQSTLab/CVE-2024-53677](https://github.com/EQSTLab/CVE-2024-53677) :  
+![starts](https://img.shields.io/github/stars/EQSTLab/CVE-2024-53677.svg) 
+![forks](https://img.shields.io/github/forks/EQSTLab/CVE-2024-53677.svg) 
+2025-01-03T18:51:20Z
+
+- [https://github.com/c4oocO/CVE-2024-53677-Docker](https://github.com/c4oocO/CVE-2024-53677-Docker) :  
+![starts](https://img.shields.io/github/stars/c4oocO/CVE-2024-53677-Docker.svg) 
+![forks](https://img.shields.io/github/forks/c4oocO/CVE-2024-53677-Docker.svg) 
+2024-12-17T07:01:11Z
+
+- [https://github.com/dustblessnotdust/CVE-2024-53677-S2-067-thread](https://github.com/dustblessnotdust/CVE-2024-53677-S2-067-thread) :  
+![starts](https://img.shields.io/github/stars/dustblessnotdust/CVE-2024-53677-S2-067-thread.svg) 
+![forks](https://img.shields.io/github/forks/dustblessnotdust/CVE-2024-53677-S2-067-thread.svg) 
+2024-12-18T19:10:48Z
+
+- [https://github.com/yangyanglo/CVE-2024-53677](https://github.com/yangyanglo/CVE-2024-53677) :  
+![starts](https://img.shields.io/github/stars/yangyanglo/CVE-2024-53677.svg) 
+![forks](https://img.shields.io/github/forks/yangyanglo/CVE-2024-53677.svg) 
+2024-12-17T08:52:36Z
+
+- [https://github.com/Q0LT/VM-CVE-2024-53677](https://github.com/Q0LT/VM-CVE-2024-53677) :  
+![starts](https://img.shields.io/github/stars/Q0LT/VM-CVE-2024-53677.svg) 
+![forks](https://img.shields.io/github/forks/Q0LT/VM-CVE-2024-53677.svg) 
+2024-12-23T17:31:32Z
+
+- [https://github.com/0xdeviner/CVE-2024-53677](https://github.com/0xdeviner/CVE-2024-53677) :  
+![starts](https://img.shields.io/github/stars/0xdeviner/CVE-2024-53677.svg) 
+![forks](https://img.shields.io/github/forks/0xdeviner/CVE-2024-53677.svg) 
+2024-12-23T14:27:51Z
+
+- [https://github.com/0xPThree/struts_cve-2024-53677](https://github.com/0xPThree/struts_cve-2024-53677) :  
+![starts](https://img.shields.io/github/stars/0xPThree/struts_cve-2024-53677.svg) 
+![forks](https://img.shields.io/github/forks/0xPThree/struts_cve-2024-53677.svg) 
+2025-01-07T11:39:34Z
+
+## CVE-2024-49112
+ Windows Lightweight Directory Access Protocol (LDAP) Remote Code Execution Vulnerability
+
+- [https://github.com/tnkr/poc_monitor](https://github.com/tnkr/poc_monitor) :  
+![starts](https://img.shields.io/github/stars/tnkr/poc_monitor.svg) 
+![forks](https://img.shields.io/github/forks/tnkr/poc_monitor.svg) 
+2024-12-16T19:35:02Z
+
+- [https://github.com/CCIEVoice2009/CVE-2024-49112](https://github.com/CCIEVoice2009/CVE-2024-49112) :  
+![starts](https://img.shields.io/github/stars/CCIEVoice2009/CVE-2024-49112.svg) 
+![forks](https://img.shields.io/github/forks/CCIEVoice2009/CVE-2024-49112.svg) 
+2025-01-02T14:04:01Z
+
+- [https://github.com/BOl1o/CVE-2024-49112-RCE-PoC](https://github.com/BOl1o/CVE-2024-49112-RCE-PoC) :  
+![starts](https://img.shields.io/github/stars/BOl1o/CVE-2024-49112-RCE-PoC.svg) 
+![forks](https://img.shields.io/github/forks/BOl1o/CVE-2024-49112-RCE-PoC.svg) 
+2025-01-03T01:43:26Z
+
+- [https://github.com/BOl1o/CVE-2024-49112-PoC](https://github.com/BOl1o/CVE-2024-49112-PoC) :  
+![starts](https://img.shields.io/github/stars/BOl1o/CVE-2024-49112-PoC.svg) 
+![forks](https://img.shields.io/github/forks/BOl1o/CVE-2024-49112-PoC.svg) 
+2025-01-07T04:26:04Z
+
+## CVE-2024-34716
+ PrestaShop is an open source e-commerce web application. A cross-site scripting (XSS) vulnerability that only affects PrestaShops with customer-thread feature flag enabled is present starting from PrestaShop 8.1.0 and prior to PrestaShop 8.1.6. When the customer thread feature flag is enabled through the front-office contact form, a hacker can upload a malicious file containing an XSS that will be executed when an admin opens the attached file in back office. The script injected can access the session and the security token, which allows it to perform any authenticated action in the scope of the administrator's right. This vulnerability is patched in 8.1.6. A workaround is to disable the customer-thread feature-flag.
+
+- [https://github.com/aelmokhtar/CVE-2024-34716](https://github.com/aelmokhtar/CVE-2024-34716) :  
+![starts](https://img.shields.io/github/stars/aelmokhtar/CVE-2024-34716.svg) 
+![forks](https://img.shields.io/github/forks/aelmokhtar/CVE-2024-34716.svg) 
+2024-09-27T10:46:14Z
+
+- [https://github.com/0xDTC/Prestashop-CVE-2024-34716](https://github.com/0xDTC/Prestashop-CVE-2024-34716) :  
+![starts](https://img.shields.io/github/stars/0xDTC/Prestashop-CVE-2024-34716.svg) 
+![forks](https://img.shields.io/github/forks/0xDTC/Prestashop-CVE-2024-34716.svg) 
+2025-01-07T12:51:43Z
+
+## CVE-2024-34102
+ Adobe Commerce versions 2.4.7, 2.4.6-p5, 2.4.5-p7, 2.4.4-p8 and earlier are affected by an Improper Restriction of XML External Entity Reference ('XXE') vulnerability that could result in arbitrary code execution. An attacker could exploit this vulnerability by sending a crafted XML document that references external entities. Exploitation of this issue does not require user interaction.
+
+- [https://github.com/Chocapikk/CVE-2024-34102](https://github.com/Chocapikk/CVE-2024-34102) :  
+![starts](https://img.shields.io/github/stars/Chocapikk/CVE-2024-34102.svg) 
+![forks](https://img.shields.io/github/forks/Chocapikk/CVE-2024-34102.svg) 
+2024-09-05T18:38:46Z
+
+- [https://github.com/bigb0x/CVE-2024-34102](https://github.com/bigb0x/CVE-2024-34102) :  
+![starts](https://img.shields.io/github/stars/bigb0x/CVE-2024-34102.svg) 
+![forks](https://img.shields.io/github/forks/bigb0x/CVE-2024-34102.svg) 
+2024-06-29T08:13:05Z
+
+- [https://github.com/th3gokul/CVE-2024-34102](https://github.com/th3gokul/CVE-2024-34102) :  
+![starts](https://img.shields.io/github/stars/th3gokul/CVE-2024-34102.svg) 
+![forks](https://img.shields.io/github/forks/th3gokul/CVE-2024-34102.svg) 
+2024-08-14T15:10:47Z
+
+- [https://github.com/jakabakos/CVE-2024-34102-CosmicSting-XXE-in-Adobe-Commerce-and-Magento](https://github.com/jakabakos/CVE-2024-34102-CosmicSting-XXE-in-Adobe-Commerce-and-Magento) :  
+![starts](https://img.shields.io/github/stars/jakabakos/CVE-2024-34102-CosmicSting-XXE-in-Adobe-Commerce-and-Magento.svg) 
+![forks](https://img.shields.io/github/forks/jakabakos/CVE-2024-34102-CosmicSting-XXE-in-Adobe-Commerce-and-Magento.svg) 
+2024-07-05T09:26:02Z
+
+- [https://github.com/bughuntar/CVE-2024-34102](https://github.com/bughuntar/CVE-2024-34102) :  
+![starts](https://img.shields.io/github/stars/bughuntar/CVE-2024-34102.svg) 
+![forks](https://img.shields.io/github/forks/bughuntar/CVE-2024-34102.svg) 
+2024-07-15T04:16:03Z
+
+- [https://github.com/EQSTLab/CVE-2024-34102](https://github.com/EQSTLab/CVE-2024-34102) :  
+![starts](https://img.shields.io/github/stars/EQSTLab/CVE-2024-34102.svg) 
+![forks](https://img.shields.io/github/forks/EQSTLab/CVE-2024-34102.svg) 
+2024-08-13T08:48:46Z
+
+- [https://github.com/0x0d3ad/CVE-2024-34102](https://github.com/0x0d3ad/CVE-2024-34102) :  
+![starts](https://img.shields.io/github/stars/0x0d3ad/CVE-2024-34102.svg) 
+![forks](https://img.shields.io/github/forks/0x0d3ad/CVE-2024-34102.svg) 
+2024-07-01T17:42:30Z
+
+- [https://github.com/11whoami99/CVE-2024-34102](https://github.com/11whoami99/CVE-2024-34102) :  
+![starts](https://img.shields.io/github/stars/11whoami99/CVE-2024-34102.svg) 
+![forks](https://img.shields.io/github/forks/11whoami99/CVE-2024-34102.svg) 
+2024-07-01T03:20:14Z
+
+- [https://github.com/Phantom-IN/CVE-2024-34102](https://github.com/Phantom-IN/CVE-2024-34102) :  
+![starts](https://img.shields.io/github/stars/Phantom-IN/CVE-2024-34102.svg) 
+![forks](https://img.shields.io/github/forks/Phantom-IN/CVE-2024-34102.svg) 
+2024-07-14T08:42:46Z
+
+- [https://github.com/wubinworks/magento2-cosmic-sting-patch](https://github.com/wubinworks/magento2-cosmic-sting-patch) :  
+![starts](https://img.shields.io/github/stars/wubinworks/magento2-cosmic-sting-patch.svg) 
+![forks](https://img.shields.io/github/forks/wubinworks/magento2-cosmic-sting-patch.svg) 
+2024-08-08T08:31:17Z
+
+- [https://github.com/wubinworks/magento2-jwt-auth-patch](https://github.com/wubinworks/magento2-jwt-auth-patch) :  
+![starts](https://img.shields.io/github/stars/wubinworks/magento2-jwt-auth-patch.svg) 
+![forks](https://img.shields.io/github/forks/wubinworks/magento2-jwt-auth-patch.svg) 
+2024-12-10T05:45:31Z
+
+- [https://github.com/unknownzerobit/poc](https://github.com/unknownzerobit/poc) :  
+![starts](https://img.shields.io/github/stars/unknownzerobit/poc.svg) 
+![forks](https://img.shields.io/github/forks/unknownzerobit/poc.svg) 
+2024-07-08T11:41:53Z
+
+- [https://github.com/d0rb/CVE-2024-34102](https://github.com/d0rb/CVE-2024-34102) :  
+![starts](https://img.shields.io/github/stars/d0rb/CVE-2024-34102.svg) 
+![forks](https://img.shields.io/github/forks/d0rb/CVE-2024-34102.svg) 
+2024-06-28T14:52:41Z
+
+- [https://github.com/mksundaram69/CVE-2024-34102](https://github.com/mksundaram69/CVE-2024-34102) :  
+![starts](https://img.shields.io/github/stars/mksundaram69/CVE-2024-34102.svg) 
+![forks](https://img.shields.io/github/forks/mksundaram69/CVE-2024-34102.svg) 
+2025-01-07T16:47:50Z
+
+- [https://github.com/crynomore/CVE-2024-34102](https://github.com/crynomore/CVE-2024-34102) :  
+![starts](https://img.shields.io/github/stars/crynomore/CVE-2024-34102.svg) 
+![forks](https://img.shields.io/github/forks/crynomore/CVE-2024-34102.svg) 
+2024-07-11T11:54:40Z
+
+- [https://github.com/dream434/CVE-2024-34102](https://github.com/dream434/CVE-2024-34102) :  
+![starts](https://img.shields.io/github/stars/dream434/CVE-2024-34102.svg) 
+![forks](https://img.shields.io/github/forks/dream434/CVE-2024-34102.svg) 
+2024-10-09T13:47:14Z
+
+- [https://github.com/cmsec423/CVE-2024-34102](https://github.com/cmsec423/CVE-2024-34102) :  
+![starts](https://img.shields.io/github/stars/cmsec423/CVE-2024-34102.svg) 
+![forks](https://img.shields.io/github/forks/cmsec423/CVE-2024-34102.svg) 
+2024-07-01T05:06:42Z
+
+- [https://github.com/ArturArz1/TestCVE-2024-34102](https://github.com/ArturArz1/TestCVE-2024-34102) :  
+![starts](https://img.shields.io/github/stars/ArturArz1/TestCVE-2024-34102.svg) 
+![forks](https://img.shields.io/github/forks/ArturArz1/TestCVE-2024-34102.svg) 
+2024-06-27T17:07:29Z
+
+- [https://github.com/bughuntar/CVE-2024-34102-Python](https://github.com/bughuntar/CVE-2024-34102-Python) :  
+![starts](https://img.shields.io/github/stars/bughuntar/CVE-2024-34102-Python.svg) 
+![forks](https://img.shields.io/github/forks/bughuntar/CVE-2024-34102-Python.svg) 
+2024-07-15T04:16:35Z
+
+- [https://github.com/SamJUK/cosmicsting-validator](https://github.com/SamJUK/cosmicsting-validator) :  
+![starts](https://img.shields.io/github/stars/SamJUK/cosmicsting-validator.svg) 
+![forks](https://img.shields.io/github/forks/SamJUK/cosmicsting-validator.svg) 
+2024-07-13T16:59:23Z
+
+- [https://github.com/cmsec423/Magento-XXE-CVE-2024-34102](https://github.com/cmsec423/Magento-XXE-CVE-2024-34102) :  
+![starts](https://img.shields.io/github/stars/cmsec423/Magento-XXE-CVE-2024-34102.svg) 
+![forks](https://img.shields.io/github/forks/cmsec423/Magento-XXE-CVE-2024-34102.svg) 
+2024-07-01T05:08:37Z
+
+- [https://github.com/bka/magento-cve-2024-34102-exploit-cosmicstring](https://github.com/bka/magento-cve-2024-34102-exploit-cosmicstring) :  
+![starts](https://img.shields.io/github/stars/bka/magento-cve-2024-34102-exploit-cosmicstring.svg) 
+![forks](https://img.shields.io/github/forks/bka/magento-cve-2024-34102-exploit-cosmicstring.svg) 
+2024-10-09T12:33:37Z
+
+- [https://github.com/wubinworks/magento2-encryption-key-manager-cli](https://github.com/wubinworks/magento2-encryption-key-manager-cli) :  
+![starts](https://img.shields.io/github/stars/wubinworks/magento2-encryption-key-manager-cli.svg) 
+![forks](https://img.shields.io/github/forks/wubinworks/magento2-encryption-key-manager-cli.svg) 
+2024-12-04T15:47:48Z
+
+## CVE-2024-12849
+ The Error Log Viewer By WP Guru plugin for WordPress is vulnerable to Arbitrary File Read in all versions up to, and including, 1.0.1.3 via the wp_ajax_nopriv_elvwp_log_download AJAX action. This makes it possible for unauthenticated attackers to read the contents of arbitrary files on the server, which can contain sensitive information.
+
+- [https://github.com/RandomRobbieBF/CVE-2024-12849](https://github.com/RandomRobbieBF/CVE-2024-12849) :  
+![starts](https://img.shields.io/github/stars/RandomRobbieBF/CVE-2024-12849.svg) 
+![forks](https://img.shields.io/github/forks/RandomRobbieBF/CVE-2024-12849.svg) 
+2025-01-07T13:33:09Z
+
+## CVE-2024-5491
+ Denial of Service in NetScaler ADC and NetScaler Gateway in NetScaler
+
+- [https://github.com/KrakenEU/CVE-2024-54910](https://github.com/KrakenEU/CVE-2024-54910) :  
+![starts](https://img.shields.io/github/stars/KrakenEU/CVE-2024-54910.svg) 
+![forks](https://img.shields.io/github/forks/KrakenEU/CVE-2024-54910.svg) 
+2025-01-07T18:33:18Z
 
 ## CVE-2022-30190
  A remote code execution vulnerability exists when MSDT is called using the URL protocol from a calling application such as Word. An attacker who successfully exploits this vulnerability can run arbitrary code with the privileges of the calling application. The attacker can then install programs, view, change, or delete data, or create new accounts in the context allowed by the users rights.Please see theMSRC Blog Entry for important information about steps you can take to protect your system from this vulnerability.
@@ -382,7 +258,7 @@
 - [https://github.com/khulnasoft-lab/awesome-security](https://github.com/khulnasoft-lab/awesome-security) :  
 ![starts](https://img.shields.io/github/stars/khulnasoft-lab/awesome-security.svg) 
 ![forks](https://img.shields.io/github/forks/khulnasoft-lab/awesome-security.svg) 
-2025-01-06T02:21:26Z
+2025-01-07T02:18:45Z
 
 - [https://github.com/MalwareTech/FollinaExtractor](https://github.com/MalwareTech/FollinaExtractor) :  
 ![starts](https://img.shields.io/github/stars/MalwareTech/FollinaExtractor.svg) 
@@ -664,15 +540,15 @@
 ![forks](https://img.shields.io/github/forks/ethicalblue/Follina-CVE-2022-30190-Sample.svg) 
 2024-07-20T18:23:38Z
 
-- [https://github.com/kdk2933/msdt-CVE-2022-30190](https://github.com/kdk2933/msdt-CVE-2022-30190) :  
-![starts](https://img.shields.io/github/stars/kdk2933/msdt-CVE-2022-30190.svg) 
-![forks](https://img.shields.io/github/forks/kdk2933/msdt-CVE-2022-30190.svg) 
-2022-05-31T17:54:21Z
-
 - [https://github.com/skitkat/CVE-2022-30190-POC](https://github.com/skitkat/CVE-2022-30190-POC) :  
 ![starts](https://img.shields.io/github/stars/skitkat/CVE-2022-30190-POC.svg) 
 ![forks](https://img.shields.io/github/forks/skitkat/CVE-2022-30190-POC.svg) 
 2024-07-08T14:49:29Z
+
+- [https://github.com/kdk2933/msdt-CVE-2022-30190](https://github.com/kdk2933/msdt-CVE-2022-30190) :  
+![starts](https://img.shields.io/github/stars/kdk2933/msdt-CVE-2022-30190.svg) 
+![forks](https://img.shields.io/github/forks/kdk2933/msdt-CVE-2022-30190.svg) 
+2022-05-31T17:54:21Z
 
 - [https://github.com/Cerebrovinny/follina-CVE-2022-30190](https://github.com/Cerebrovinny/follina-CVE-2022-30190) :  
 ![starts](https://img.shields.io/github/stars/Cerebrovinny/follina-CVE-2022-30190.svg) 
@@ -724,15 +600,15 @@
 ![forks](https://img.shields.io/github/forks/ernestak/Sigma-Rule-for-CVE-2022-30190.svg) 
 2022-06-14T09:27:50Z
 
-- [https://github.com/castlesmadeofsand/ms-msdt-vulnerability-pdq-package](https://github.com/castlesmadeofsand/ms-msdt-vulnerability-pdq-package) :  
-![starts](https://img.shields.io/github/stars/castlesmadeofsand/ms-msdt-vulnerability-pdq-package.svg) 
-![forks](https://img.shields.io/github/forks/castlesmadeofsand/ms-msdt-vulnerability-pdq-package.svg) 
-2022-06-08T21:04:55Z
-
 - [https://github.com/WesyHub/CVE-2022-30190---Follina---Poc-Exploit](https://github.com/WesyHub/CVE-2022-30190---Follina---Poc-Exploit) :  
 ![starts](https://img.shields.io/github/stars/WesyHub/CVE-2022-30190---Follina---Poc-Exploit.svg) 
 ![forks](https://img.shields.io/github/forks/WesyHub/CVE-2022-30190---Follina---Poc-Exploit.svg) 
 2022-06-03T06:49:34Z
+
+- [https://github.com/castlesmadeofsand/ms-msdt-vulnerability-pdq-package](https://github.com/castlesmadeofsand/ms-msdt-vulnerability-pdq-package) :  
+![starts](https://img.shields.io/github/stars/castlesmadeofsand/ms-msdt-vulnerability-pdq-package.svg) 
+![forks](https://img.shields.io/github/forks/castlesmadeofsand/ms-msdt-vulnerability-pdq-package.svg) 
+2022-06-08T21:04:55Z
 
 - [https://github.com/SrCroqueta/CVE-2022-30190_Temporary_Fix_Source_Code](https://github.com/SrCroqueta/CVE-2022-30190_Temporary_Fix_Source_Code) :  
 ![starts](https://img.shields.io/github/stars/SrCroqueta/CVE-2022-30190_Temporary_Fix_Source_Code.svg) 
@@ -783,6 +659,418 @@
 ![starts](https://img.shields.io/github/stars/maxgestic/Follina-Generator.svg) 
 ![forks](https://img.shields.io/github/forks/maxgestic/Follina-Generator.svg) 
 2022-07-12T13:42:59Z
+
+## CVE-2021-27285
+ An issue was discovered in Inspur ClusterEngine v4.0 that allows attackers to gain escalated Local privileges and execute arbitrary commands via /opt/tsce4/torque6/bin/getJobsByShell.
+
+- [https://github.com/fjh1997/CVE-2021-27285](https://github.com/fjh1997/CVE-2021-27285) :  
+![starts](https://img.shields.io/github/stars/fjh1997/CVE-2021-27285.svg) 
+![forks](https://img.shields.io/github/forks/fjh1997/CVE-2021-27285.svg) 
+2025-01-07T02:37:20Z
+
+# 2025-01-06
+## CVE-2024-56512
+ Apache NiFi 1.10.0 through 2.0.0 are missing fine-grained authorization checking for Parameter Contexts, referenced Controller Services, and referenced Parameter Providers, when creating new Process Groups.Creating a new Process Group can include binding to a Parameter Context, but in cases where the Process Group did not reference any Parameter values, the framework did not check user authorization for the bound Parameter Context. Missing authorization for a bound Parameter Context enabled clients to download non-sensitive Parameter values after creating the Process Group.Creating a new Process Group can also include referencing existing Controller Services or Parameter Providers. The framework did not check user authorization for referenced Controller Services or Parameter Providers, enabling clients to create Process Groups and use these components that were otherwise unauthorized.This vulnerability is limited in scope to authenticated users authorized to create Process Groups. The scope is further limited to deployments with component-based authorization policies. Upgrading to Apache NiFi 2.1.0 is the recommended mitigation, which includes authorization checking for Parameter and Controller Service references on Process Group creation.
+
+- [https://github.com/absholi7ly/CVE-2024-56512-Apache-NiFi-Exploit](https://github.com/absholi7ly/CVE-2024-56512-Apache-NiFi-Exploit) :  
+![starts](https://img.shields.io/github/stars/absholi7ly/CVE-2024-56512-Apache-NiFi-Exploit.svg) 
+![forks](https://img.shields.io/github/forks/absholi7ly/CVE-2024-56512-Apache-NiFi-Exploit.svg) 
+2025-01-06T17:51:38Z
+
+## CVE-2024-56433
+ shadow-utils (aka shadow) 4.4 through 4.17.0 establishes a default /etc/subuid behavior (e.g., uid 100000 through 165535 for the first user account) that can realistically conflict with the uids of users defined on locally administered networks, potentially leading to account takeover, e.g., by leveraging newuidmap for access to an NFS home directory (or same-host resources in the case of remote logins by these local network users). NOTE: it may also be argued that system administrators should not have assigned uids, within local networks, that are within the range that can occur in /etc/subuid.
+
+- [https://github.com/JonnyWhatshisface/CVE-2024-56433](https://github.com/JonnyWhatshisface/CVE-2024-56433) :  
+![starts](https://img.shields.io/github/stars/JonnyWhatshisface/CVE-2024-56433.svg) 
+![forks](https://img.shields.io/github/forks/JonnyWhatshisface/CVE-2024-56433.svg) 
+2025-01-06T12:02:39Z
+
+## CVE-2024-49113
+ Windows Lightweight Directory Access Protocol (LDAP) Denial of Service Vulnerability
+
+- [https://github.com/SafeBreach-Labs/CVE-2024-49113](https://github.com/SafeBreach-Labs/CVE-2024-49113) :  
+![starts](https://img.shields.io/github/stars/SafeBreach-Labs/CVE-2024-49113.svg) 
+![forks](https://img.shields.io/github/forks/SafeBreach-Labs/CVE-2024-49113.svg) 
+2025-01-02T16:07:23Z
+
+- [https://github.com/barcrange/CVE-2024-49113-Checker](https://github.com/barcrange/CVE-2024-49113-Checker) :  
+![starts](https://img.shields.io/github/stars/barcrange/CVE-2024-49113-Checker.svg) 
+![forks](https://img.shields.io/github/forks/barcrange/CVE-2024-49113-Checker.svg) 
+2025-01-03T08:20:03Z
+
+- [https://github.com/YoonJae-rep/CVE-2024-49113](https://github.com/YoonJae-rep/CVE-2024-49113) :  
+![starts](https://img.shields.io/github/stars/YoonJae-rep/CVE-2024-49113.svg) 
+![forks](https://img.shields.io/github/forks/YoonJae-rep/CVE-2024-49113.svg) 
+2025-01-06T08:04:45Z
+
+- [https://github.com/Sachinart/CVE-2024-49113-Checker](https://github.com/Sachinart/CVE-2024-49113-Checker) :  
+![starts](https://img.shields.io/github/stars/Sachinart/CVE-2024-49113-Checker.svg) 
+![forks](https://img.shields.io/github/forks/Sachinart/CVE-2024-49113-Checker.svg) 
+2025-01-06T12:04:02Z
+
+## CVE-2024-28987
+ The SolarWinds Web Help Desk (WHD) software is affected by a hardcoded credential vulnerability, allowing remote unauthenticated user to access internal functionality and modify data.
+
+- [https://github.com/gh-ost00/CVE-2024-28987-POC](https://github.com/gh-ost00/CVE-2024-28987-POC) :  
+![starts](https://img.shields.io/github/stars/gh-ost00/CVE-2024-28987-POC.svg) 
+![forks](https://img.shields.io/github/forks/gh-ost00/CVE-2024-28987-POC.svg) 
+2024-09-05T09:23:59Z
+
+- [https://github.com/horizon3ai/CVE-2024-28987](https://github.com/horizon3ai/CVE-2024-28987) :  
+![starts](https://img.shields.io/github/stars/horizon3ai/CVE-2024-28987.svg) 
+![forks](https://img.shields.io/github/forks/horizon3ai/CVE-2024-28987.svg) 
+2024-09-24T18:27:47Z
+
+- [https://github.com/PlayerFridei/CVE-2024-28987](https://github.com/PlayerFridei/CVE-2024-28987) :  
+![starts](https://img.shields.io/github/stars/PlayerFridei/CVE-2024-28987.svg) 
+![forks](https://img.shields.io/github/forks/PlayerFridei/CVE-2024-28987.svg) 
+2025-01-06T20:50:22Z
+
+- [https://github.com/expl0itsecurity/CVE-2024-28987](https://github.com/expl0itsecurity/CVE-2024-28987) :  
+![starts](https://img.shields.io/github/stars/expl0itsecurity/CVE-2024-28987.svg) 
+![forks](https://img.shields.io/github/forks/expl0itsecurity/CVE-2024-28987.svg) 
+2024-11-15T13:31:14Z
+
+## CVE-2024-25641
+ Cacti provides an operational monitoring and fault management framework. Prior to version 1.2.27, an arbitrary file write vulnerability, exploitable through the "Package Import" feature, allows authenticated users having the "Import Templates" permission to execute arbitrary PHP code on the web server. The vulnerability is located within the `import_package()` function defined into the `/lib/import.php` script. The function blindly trusts the filename and file content provided within the XML data, and writes such files into the Cacti base path (or even outside, since path traversal sequences are not filtered). This can be exploited to write or overwrite arbitrary files on the web server, leading to execution of arbitrary PHP code or other security impacts. Version 1.2.27 contains a patch for this issue.
+
+- [https://github.com/5ma1l/CVE-2024-25641](https://github.com/5ma1l/CVE-2024-25641) :  
+![starts](https://img.shields.io/github/stars/5ma1l/CVE-2024-25641.svg) 
+![forks](https://img.shields.io/github/forks/5ma1l/CVE-2024-25641.svg) 
+2024-09-05T11:52:22Z
+
+- [https://github.com/StopThatTalace/CVE-2024-25641-CACTI-RCE-1.2.26](https://github.com/StopThatTalace/CVE-2024-25641-CACTI-RCE-1.2.26) :  
+![starts](https://img.shields.io/github/stars/StopThatTalace/CVE-2024-25641-CACTI-RCE-1.2.26.svg) 
+![forks](https://img.shields.io/github/forks/StopThatTalace/CVE-2024-25641-CACTI-RCE-1.2.26.svg) 
+2024-09-03T05:21:04Z
+
+- [https://github.com/thisisveryfunny/CVE-2024-25641-RCE-Automated-Exploit-Cacti-1.2.26](https://github.com/thisisveryfunny/CVE-2024-25641-RCE-Automated-Exploit-Cacti-1.2.26) :  
+![starts](https://img.shields.io/github/stars/thisisveryfunny/CVE-2024-25641-RCE-Automated-Exploit-Cacti-1.2.26.svg) 
+![forks](https://img.shields.io/github/forks/thisisveryfunny/CVE-2024-25641-RCE-Automated-Exploit-Cacti-1.2.26.svg) 
+2024-08-28T18:46:58Z
+
+- [https://github.com/Safarchand/CVE-2024-25641](https://github.com/Safarchand/CVE-2024-25641) :  
+![starts](https://img.shields.io/github/stars/Safarchand/CVE-2024-25641.svg) 
+![forks](https://img.shields.io/github/forks/Safarchand/CVE-2024-25641.svg) 
+2024-09-01T04:05:33Z
+
+- [https://github.com/XiaomingX/cve-2024-25641-poc](https://github.com/XiaomingX/cve-2024-25641-poc) :  
+![starts](https://img.shields.io/github/stars/XiaomingX/cve-2024-25641-poc.svg) 
+![forks](https://img.shields.io/github/forks/XiaomingX/cve-2024-25641-poc.svg) 
+2024-11-22T14:09:15Z
+
+- [https://github.com/D3Ext/CVE-2024-25641](https://github.com/D3Ext/CVE-2024-25641) :  
+![starts](https://img.shields.io/github/stars/D3Ext/CVE-2024-25641.svg) 
+![forks](https://img.shields.io/github/forks/D3Ext/CVE-2024-25641.svg) 
+2025-01-06T18:50:17Z
+
+## CVE-2024-3094
+ Malicious code was discovered in the upstream tarballs of xz, starting with version 5.6.0. Through a series of complex obfuscations, the liblzma build process extracts a prebuilt object file from a disguised test file existing in the source code, which is then used to modify specific functions in the liblzma code. This results in a modified liblzma library that can be used by any software linked against this library, intercepting and modifying the data interaction with this library.
+
+- [https://github.com/amlweems/xzbot](https://github.com/amlweems/xzbot) :  
+![starts](https://img.shields.io/github/stars/amlweems/xzbot.svg) 
+![forks](https://img.shields.io/github/forks/amlweems/xzbot.svg) 
+2024-04-03T04:58:50Z
+
+- [https://github.com/lockness-Ko/xz-vulnerable-honeypot](https://github.com/lockness-Ko/xz-vulnerable-honeypot) :  
+![starts](https://img.shields.io/github/stars/lockness-Ko/xz-vulnerable-honeypot.svg) 
+![forks](https://img.shields.io/github/forks/lockness-Ko/xz-vulnerable-honeypot.svg) 
+2024-04-02T03:38:32Z
+
+- [https://github.com/FabioBaroni/CVE-2024-3094-checker](https://github.com/FabioBaroni/CVE-2024-3094-checker) :  
+![starts](https://img.shields.io/github/stars/FabioBaroni/CVE-2024-3094-checker.svg) 
+![forks](https://img.shields.io/github/forks/FabioBaroni/CVE-2024-3094-checker.svg) 
+2024-03-31T00:13:39Z
+
+- [https://github.com/byinarie/CVE-2024-3094-info](https://github.com/byinarie/CVE-2024-3094-info) :  
+![starts](https://img.shields.io/github/stars/byinarie/CVE-2024-3094-info.svg) 
+![forks](https://img.shields.io/github/forks/byinarie/CVE-2024-3094-info.svg) 
+2024-04-01T16:01:34Z
+
+- [https://github.com/jfrog/cve-2024-3094-tools](https://github.com/jfrog/cve-2024-3094-tools) :  
+![starts](https://img.shields.io/github/stars/jfrog/cve-2024-3094-tools.svg) 
+![forks](https://img.shields.io/github/forks/jfrog/cve-2024-3094-tools.svg) 
+2024-04-07T13:07:44Z
+
+- [https://github.com/alokemajumder/CVE-2024-3094-Vulnerability-Checker-Fixer](https://github.com/alokemajumder/CVE-2024-3094-Vulnerability-Checker-Fixer) :  
+![starts](https://img.shields.io/github/stars/alokemajumder/CVE-2024-3094-Vulnerability-Checker-Fixer.svg) 
+![forks](https://img.shields.io/github/forks/alokemajumder/CVE-2024-3094-Vulnerability-Checker-Fixer.svg) 
+2024-04-07T07:40:48Z
+
+- [https://github.com/0xlane/xz-cve-2024-3094](https://github.com/0xlane/xz-cve-2024-3094) :  
+![starts](https://img.shields.io/github/stars/0xlane/xz-cve-2024-3094.svg) 
+![forks](https://img.shields.io/github/forks/0xlane/xz-cve-2024-3094.svg) 
+2024-04-02T07:12:53Z
+
+- [https://github.com/robertdfrench/ifuncd-up](https://github.com/robertdfrench/ifuncd-up) :  
+![starts](https://img.shields.io/github/stars/robertdfrench/ifuncd-up.svg) 
+![forks](https://img.shields.io/github/forks/robertdfrench/ifuncd-up.svg) 
+2024-09-04T04:32:15Z
+
+- [https://github.com/teyhouse/CVE-2024-3094](https://github.com/teyhouse/CVE-2024-3094) :  
+![starts](https://img.shields.io/github/stars/teyhouse/CVE-2024-3094.svg) 
+![forks](https://img.shields.io/github/forks/teyhouse/CVE-2024-3094.svg) 
+2024-03-31T14:36:00Z
+
+- [https://github.com/emirkmo/xz-backdoor-github](https://github.com/emirkmo/xz-backdoor-github) :  
+![starts](https://img.shields.io/github/stars/emirkmo/xz-backdoor-github.svg) 
+![forks](https://img.shields.io/github/forks/emirkmo/xz-backdoor-github.svg) 
+2024-04-01T15:12:50Z
+
+- [https://github.com/r0binak/xzk8s](https://github.com/r0binak/xzk8s) :  
+![starts](https://img.shields.io/github/stars/r0binak/xzk8s.svg) 
+![forks](https://img.shields.io/github/forks/r0binak/xzk8s.svg) 
+2024-04-06T16:09:56Z
+
+- [https://github.com/XiaomingX/cve-2024-3094-xz-backdoor-exploit](https://github.com/XiaomingX/cve-2024-3094-xz-backdoor-exploit) :  
+![starts](https://img.shields.io/github/stars/XiaomingX/cve-2024-3094-xz-backdoor-exploit.svg) 
+![forks](https://img.shields.io/github/forks/XiaomingX/cve-2024-3094-xz-backdoor-exploit.svg) 
+2024-12-01T05:30:15Z
+
+- [https://github.com/wgetnz/CVE-2024-3094-check](https://github.com/wgetnz/CVE-2024-3094-check) :  
+![starts](https://img.shields.io/github/stars/wgetnz/CVE-2024-3094-check.svg) 
+![forks](https://img.shields.io/github/forks/wgetnz/CVE-2024-3094-check.svg) 
+2024-03-30T08:08:40Z
+
+- [https://github.com/Hacker-Hermanos/CVE-2024-3094_xz_check](https://github.com/Hacker-Hermanos/CVE-2024-3094_xz_check) :  
+![starts](https://img.shields.io/github/stars/Hacker-Hermanos/CVE-2024-3094_xz_check.svg) 
+![forks](https://img.shields.io/github/forks/Hacker-Hermanos/CVE-2024-3094_xz_check.svg) 
+2024-03-30T05:21:13Z
+
+- [https://github.com/robertdebock/ansible-role-cve_2024_3094](https://github.com/robertdebock/ansible-role-cve_2024_3094) :  
+![starts](https://img.shields.io/github/stars/robertdebock/ansible-role-cve_2024_3094.svg) 
+![forks](https://img.shields.io/github/forks/robertdebock/ansible-role-cve_2024_3094.svg) 
+2025-01-06T08:54:55Z
+
+- [https://github.com/badsectorlabs/ludus_xz_backdoor](https://github.com/badsectorlabs/ludus_xz_backdoor) :  
+![starts](https://img.shields.io/github/stars/badsectorlabs/ludus_xz_backdoor.svg) 
+![forks](https://img.shields.io/github/forks/badsectorlabs/ludus_xz_backdoor.svg) 
+2024-04-05T02:36:41Z
+
+- [https://github.com/Yuma-Tsushima07/CVE-2024-3094](https://github.com/Yuma-Tsushima07/CVE-2024-3094) :  
+![starts](https://img.shields.io/github/stars/Yuma-Tsushima07/CVE-2024-3094.svg) 
+![forks](https://img.shields.io/github/forks/Yuma-Tsushima07/CVE-2024-3094.svg) 
+2024-03-31T11:02:02Z
+
+- [https://github.com/crfearnworks/ansible-CVE-2024-3094](https://github.com/crfearnworks/ansible-CVE-2024-3094) :  
+![starts](https://img.shields.io/github/stars/crfearnworks/ansible-CVE-2024-3094.svg) 
+![forks](https://img.shields.io/github/forks/crfearnworks/ansible-CVE-2024-3094.svg) 
+2024-04-04T18:46:34Z
+
+- [https://github.com/neuralinhibitor/xzwhy](https://github.com/neuralinhibitor/xzwhy) :  
+![starts](https://img.shields.io/github/stars/neuralinhibitor/xzwhy.svg) 
+![forks](https://img.shields.io/github/forks/neuralinhibitor/xzwhy.svg) 
+2024-04-18T15:09:42Z
+
+- [https://github.com/gustavorobertux/CVE-2024-3094](https://github.com/gustavorobertux/CVE-2024-3094) :  
+![starts](https://img.shields.io/github/stars/gustavorobertux/CVE-2024-3094.svg) 
+![forks](https://img.shields.io/github/forks/gustavorobertux/CVE-2024-3094.svg) 
+2024-04-02T10:39:09Z
+
+- [https://github.com/felipecosta09/cve-2024-3094](https://github.com/felipecosta09/cve-2024-3094) :  
+![starts](https://img.shields.io/github/stars/felipecosta09/cve-2024-3094.svg) 
+![forks](https://img.shields.io/github/forks/felipecosta09/cve-2024-3094.svg) 
+2024-04-05T10:50:45Z
+
+- [https://github.com/pentestfunctions/CVE-2024-3094](https://github.com/pentestfunctions/CVE-2024-3094) :  
+![starts](https://img.shields.io/github/stars/pentestfunctions/CVE-2024-3094.svg) 
+![forks](https://img.shields.io/github/forks/pentestfunctions/CVE-2024-3094.svg) 
+2024-04-02T09:11:43Z
+
+- [https://github.com/lypd0/CVE-2024-3094-Vulnerabity-Checker](https://github.com/lypd0/CVE-2024-3094-Vulnerabity-Checker) :  
+![starts](https://img.shields.io/github/stars/lypd0/CVE-2024-3094-Vulnerabity-Checker.svg) 
+![forks](https://img.shields.io/github/forks/lypd0/CVE-2024-3094-Vulnerabity-Checker.svg) 
+2024-03-29T21:56:17Z
+
+- [https://github.com/ScrimForever/CVE-2024-3094](https://github.com/ScrimForever/CVE-2024-3094) :  
+![starts](https://img.shields.io/github/stars/ScrimForever/CVE-2024-3094.svg) 
+![forks](https://img.shields.io/github/forks/ScrimForever/CVE-2024-3094.svg) 
+2024-04-02T03:38:30Z
+
+- [https://github.com/Horizon-Software-Development/CVE-2024-3094](https://github.com/Horizon-Software-Development/CVE-2024-3094) :  
+![starts](https://img.shields.io/github/stars/Horizon-Software-Development/CVE-2024-3094.svg) 
+![forks](https://img.shields.io/github/forks/Horizon-Software-Development/CVE-2024-3094.svg) 
+2024-03-30T20:16:43Z
+
+- [https://github.com/Bella-Bc/xz-backdoor-CVE-2024-3094-Check](https://github.com/Bella-Bc/xz-backdoor-CVE-2024-3094-Check) :  
+![starts](https://img.shields.io/github/stars/Bella-Bc/xz-backdoor-CVE-2024-3094-Check.svg) 
+![forks](https://img.shields.io/github/forks/Bella-Bc/xz-backdoor-CVE-2024-3094-Check.svg) 
+2024-04-03T14:02:00Z
+
+- [https://github.com/przemoc/xz-backdoor-links](https://github.com/przemoc/xz-backdoor-links) :  
+![starts](https://img.shields.io/github/stars/przemoc/xz-backdoor-links.svg) 
+![forks](https://img.shields.io/github/forks/przemoc/xz-backdoor-links.svg) 
+2024-04-20T14:28:16Z
+
+- [https://github.com/DANO-AMP/CVE-2024-3094](https://github.com/DANO-AMP/CVE-2024-3094) :  
+![starts](https://img.shields.io/github/stars/DANO-AMP/CVE-2024-3094.svg) 
+![forks](https://img.shields.io/github/forks/DANO-AMP/CVE-2024-3094.svg) 
+2024-07-05T12:03:22Z
+
+- [https://github.com/galacticquest/cve-2024-3094-detect](https://github.com/galacticquest/cve-2024-3094-detect) :  
+![starts](https://img.shields.io/github/stars/galacticquest/cve-2024-3094-detect.svg) 
+![forks](https://img.shields.io/github/forks/galacticquest/cve-2024-3094-detect.svg) 
+2024-04-01T03:09:45Z
+
+- [https://github.com/robertdebock/ansible-playbook-cve-2024-3094](https://github.com/robertdebock/ansible-playbook-cve-2024-3094) :  
+![starts](https://img.shields.io/github/stars/robertdebock/ansible-playbook-cve-2024-3094.svg) 
+![forks](https://img.shields.io/github/forks/robertdebock/ansible-playbook-cve-2024-3094.svg) 
+2024-04-05T11:12:47Z
+
+- [https://github.com/Security-Phoenix-demo/CVE-2024-3094-fix-exploits](https://github.com/Security-Phoenix-demo/CVE-2024-3094-fix-exploits) :  
+![starts](https://img.shields.io/github/stars/Security-Phoenix-demo/CVE-2024-3094-fix-exploits.svg) 
+![forks](https://img.shields.io/github/forks/Security-Phoenix-demo/CVE-2024-3094-fix-exploits.svg) 
+2024-04-03T07:57:30Z
+
+- [https://github.com/brinhosa/CVE-2024-3094-One-Liner](https://github.com/brinhosa/CVE-2024-3094-One-Liner) :  
+![starts](https://img.shields.io/github/stars/brinhosa/CVE-2024-3094-One-Liner.svg) 
+![forks](https://img.shields.io/github/forks/brinhosa/CVE-2024-3094-One-Liner.svg) 
+2024-04-01T12:09:12Z
+
+- [https://github.com/mesutgungor/xz-backdoor-vulnerability](https://github.com/mesutgungor/xz-backdoor-vulnerability) :  
+![starts](https://img.shields.io/github/stars/mesutgungor/xz-backdoor-vulnerability.svg) 
+![forks](https://img.shields.io/github/forks/mesutgungor/xz-backdoor-vulnerability.svg) 
+2024-04-01T09:18:08Z
+
+- [https://github.com/isuruwa/CVE-2024-3094](https://github.com/isuruwa/CVE-2024-3094) :  
+![starts](https://img.shields.io/github/stars/isuruwa/CVE-2024-3094.svg) 
+![forks](https://img.shields.io/github/forks/isuruwa/CVE-2024-3094.svg) 
+2024-03-31T05:31:44Z
+
+- [https://github.com/bsekercioglu/cve2024-3094-Checker](https://github.com/bsekercioglu/cve2024-3094-Checker) :  
+![starts](https://img.shields.io/github/stars/bsekercioglu/cve2024-3094-Checker.svg) 
+![forks](https://img.shields.io/github/forks/bsekercioglu/cve2024-3094-Checker.svg) 
+2024-03-30T11:59:18Z
+
+- [https://github.com/bioless/xz_cve-2024-3094_detection](https://github.com/bioless/xz_cve-2024-3094_detection) :  
+![starts](https://img.shields.io/github/stars/bioless/xz_cve-2024-3094_detection.svg) 
+![forks](https://img.shields.io/github/forks/bioless/xz_cve-2024-3094_detection.svg) 
+2024-03-29T23:23:12Z
+
+- [https://github.com/devjanger/CVE-2024-3094-XZ-Backdoor-Detector](https://github.com/devjanger/CVE-2024-3094-XZ-Backdoor-Detector) :  
+![starts](https://img.shields.io/github/stars/devjanger/CVE-2024-3094-XZ-Backdoor-Detector.svg) 
+![forks](https://img.shields.io/github/forks/devjanger/CVE-2024-3094-XZ-Backdoor-Detector.svg) 
+2024-04-02T02:24:48Z
+
+- [https://github.com/reuteras/CVE-2024-3094](https://github.com/reuteras/CVE-2024-3094) :  
+![starts](https://img.shields.io/github/stars/reuteras/CVE-2024-3094.svg) 
+![forks](https://img.shields.io/github/forks/reuteras/CVE-2024-3094.svg) 
+2024-05-05T08:53:07Z
+
+- [https://github.com/ashwani95/CVE-2024-3094](https://github.com/ashwani95/CVE-2024-3094) :  
+![starts](https://img.shields.io/github/stars/ashwani95/CVE-2024-3094.svg) 
+![forks](https://img.shields.io/github/forks/ashwani95/CVE-2024-3094.svg) 
+2024-03-30T17:00:39Z
+
+- [https://github.com/Fractal-Tess/CVE-2024-3094](https://github.com/Fractal-Tess/CVE-2024-3094) :  
+![starts](https://img.shields.io/github/stars/Fractal-Tess/CVE-2024-3094.svg) 
+![forks](https://img.shields.io/github/forks/Fractal-Tess/CVE-2024-3094.svg) 
+2024-03-30T00:34:06Z
+
+- [https://github.com/Mustafa1986/CVE-2024-3094](https://github.com/Mustafa1986/CVE-2024-3094) :  
+![starts](https://img.shields.io/github/stars/Mustafa1986/CVE-2024-3094.svg) 
+![forks](https://img.shields.io/github/forks/Mustafa1986/CVE-2024-3094.svg) 
+2024-04-01T05:49:08Z
+
+- [https://github.com/mightysai1997/CVE-2024-3094](https://github.com/mightysai1997/CVE-2024-3094) :  
+![starts](https://img.shields.io/github/stars/mightysai1997/CVE-2024-3094.svg) 
+![forks](https://img.shields.io/github/forks/mightysai1997/CVE-2024-3094.svg) 
+2024-04-01T09:06:34Z
+
+- [https://github.com/dah4k/CVE-2024-3094](https://github.com/dah4k/CVE-2024-3094) :  
+![starts](https://img.shields.io/github/stars/dah4k/CVE-2024-3094.svg) 
+![forks](https://img.shields.io/github/forks/dah4k/CVE-2024-3094.svg) 
+2024-04-01T18:17:23Z
+
+- [https://github.com/shefirot/CVE-2024-3094](https://github.com/shefirot/CVE-2024-3094) :  
+![starts](https://img.shields.io/github/stars/shefirot/CVE-2024-3094.svg) 
+![forks](https://img.shields.io/github/forks/shefirot/CVE-2024-3094.svg) 
+2024-06-11T14:21:20Z
+
+- [https://github.com/Simplifi-ED/CVE-2024-3094-patcher](https://github.com/Simplifi-ED/CVE-2024-3094-patcher) :  
+![starts](https://img.shields.io/github/stars/Simplifi-ED/CVE-2024-3094-patcher.svg) 
+![forks](https://img.shields.io/github/forks/Simplifi-ED/CVE-2024-3094-patcher.svg) 
+2024-03-31T15:36:28Z
+
+- [https://github.com/ackemed/detectar_cve-2024-3094](https://github.com/ackemed/detectar_cve-2024-3094) :  
+![starts](https://img.shields.io/github/stars/ackemed/detectar_cve-2024-3094.svg) 
+![forks](https://img.shields.io/github/forks/ackemed/detectar_cve-2024-3094.svg) 
+2024-04-01T23:04:46Z
+
+- [https://github.com/TheTorjanCaptain/CVE-2024-3094-Checker](https://github.com/TheTorjanCaptain/CVE-2024-3094-Checker) :  
+![starts](https://img.shields.io/github/stars/TheTorjanCaptain/CVE-2024-3094-Checker.svg) 
+![forks](https://img.shields.io/github/forks/TheTorjanCaptain/CVE-2024-3094-Checker.svg) 
+2024-04-03T19:36:30Z
+
+- [https://github.com/hazemkya/CVE-2024-3094-checker](https://github.com/hazemkya/CVE-2024-3094-checker) :  
+![starts](https://img.shields.io/github/stars/hazemkya/CVE-2024-3094-checker.svg) 
+![forks](https://img.shields.io/github/forks/hazemkya/CVE-2024-3094-checker.svg) 
+2024-03-31T00:40:48Z
+
+- [https://github.com/iheb2b/CVE-2024-3094-Checker](https://github.com/iheb2b/CVE-2024-3094-Checker) :  
+![starts](https://img.shields.io/github/stars/iheb2b/CVE-2024-3094-Checker.svg) 
+![forks](https://img.shields.io/github/forks/iheb2b/CVE-2024-3094-Checker.svg) 
+2024-04-06T22:15:00Z
+
+- [https://github.com/mightysai1997/CVE-2024-3094-info](https://github.com/mightysai1997/CVE-2024-3094-info) :  
+![starts](https://img.shields.io/github/stars/mightysai1997/CVE-2024-3094-info.svg) 
+![forks](https://img.shields.io/github/forks/mightysai1997/CVE-2024-3094-info.svg) 
+2024-04-01T09:05:59Z
+
+- [https://github.com/OpensourceICTSolutions/xz_utils-CVE-2024-3094](https://github.com/OpensourceICTSolutions/xz_utils-CVE-2024-3094) :  
+![starts](https://img.shields.io/github/stars/OpensourceICTSolutions/xz_utils-CVE-2024-3094.svg) 
+![forks](https://img.shields.io/github/forks/OpensourceICTSolutions/xz_utils-CVE-2024-3094.svg) 
+2024-03-29T21:42:42Z
+
+- [https://github.com/buluma/ansible-role-cve_2024_3094](https://github.com/buluma/ansible-role-cve_2024_3094) :  
+![starts](https://img.shields.io/github/stars/buluma/ansible-role-cve_2024_3094.svg) 
+![forks](https://img.shields.io/github/forks/buluma/ansible-role-cve_2024_3094.svg) 
+2024-07-19T00:14:02Z
+
+- [https://github.com/MrBUGLF/XZ-Utils_CVE-2024-3094](https://github.com/MrBUGLF/XZ-Utils_CVE-2024-3094) :  
+![starts](https://img.shields.io/github/stars/MrBUGLF/XZ-Utils_CVE-2024-3094.svg) 
+![forks](https://img.shields.io/github/forks/MrBUGLF/XZ-Utils_CVE-2024-3094.svg) 
+2024-04-01T02:03:36Z
+
+- [https://github.com/gayatriracha/CVE-2024-3094-Nmap-NSE-script](https://github.com/gayatriracha/CVE-2024-3094-Nmap-NSE-script) :  
+![starts](https://img.shields.io/github/stars/gayatriracha/CVE-2024-3094-Nmap-NSE-script.svg) 
+![forks](https://img.shields.io/github/forks/gayatriracha/CVE-2024-3094-Nmap-NSE-script.svg) 
+2024-03-31T17:56:48Z
+
+- [https://github.com/MagpieRYL/CVE-2024-3094-backdoor-env-container](https://github.com/MagpieRYL/CVE-2024-3094-backdoor-env-container) :  
+![starts](https://img.shields.io/github/stars/MagpieRYL/CVE-2024-3094-backdoor-env-container.svg) 
+![forks](https://img.shields.io/github/forks/MagpieRYL/CVE-2024-3094-backdoor-env-container.svg) 
+2024-04-03T13:05:40Z
+
+- [https://github.com/weltregie/liblzma-scan](https://github.com/weltregie/liblzma-scan) :  
+![starts](https://img.shields.io/github/stars/weltregie/liblzma-scan.svg) 
+![forks](https://img.shields.io/github/forks/weltregie/liblzma-scan.svg) 
+2024-04-04T11:36:09Z
+
+- [https://github.com/AndreaCicca/Sicurezza-Informatica-Presentazione](https://github.com/AndreaCicca/Sicurezza-Informatica-Presentazione) :  
+![starts](https://img.shields.io/github/stars/AndreaCicca/Sicurezza-Informatica-Presentazione.svg) 
+![forks](https://img.shields.io/github/forks/AndreaCicca/Sicurezza-Informatica-Presentazione.svg) 
+2024-06-07T07:26:21Z
+
+- [https://github.com/hackingetico21/revisaxzutils](https://github.com/hackingetico21/revisaxzutils) :  
+![starts](https://img.shields.io/github/stars/hackingetico21/revisaxzutils.svg) 
+![forks](https://img.shields.io/github/forks/hackingetico21/revisaxzutils.svg) 
+2024-04-02T01:28:41Z
+
+- [https://github.com/fevar54/Detectar-Backdoor-en-liblzma-de-XZ-utils-CVE-2024-3094-](https://github.com/fevar54/Detectar-Backdoor-en-liblzma-de-XZ-utils-CVE-2024-3094-) :  
+![starts](https://img.shields.io/github/stars/fevar54/Detectar-Backdoor-en-liblzma-de-XZ-utils-CVE-2024-3094-.svg) 
+![forks](https://img.shields.io/github/forks/fevar54/Detectar-Backdoor-en-liblzma-de-XZ-utils-CVE-2024-3094-.svg) 
+2024-04-13T16:46:19Z
+
+- [https://github.com/Juul/xz-backdoor-scan](https://github.com/Juul/xz-backdoor-scan) :  
+![starts](https://img.shields.io/github/stars/Juul/xz-backdoor-scan.svg) 
+![forks](https://img.shields.io/github/forks/Juul/xz-backdoor-scan.svg) 
+2024-04-07T05:37:08Z
+
+- [https://github.com/harekrishnarai/xz-utils-vuln-checker](https://github.com/harekrishnarai/xz-utils-vuln-checker) :  
+![starts](https://img.shields.io/github/stars/harekrishnarai/xz-utils-vuln-checker.svg) 
+![forks](https://img.shields.io/github/forks/harekrishnarai/xz-utils-vuln-checker.svg) 
+2024-03-30T17:43:37Z
 
 # 2025-01-05
 ## CVE-2024-47575
@@ -1035,6 +1323,11 @@
 ![forks](https://img.shields.io/github/forks/wiggels/regresshion-check.svg) 
 2024-07-16T20:25:52Z
 
+- [https://github.com/YassDEV221608/CVE-2024-6387_PoC](https://github.com/YassDEV221608/CVE-2024-6387_PoC) :  
+![starts](https://img.shields.io/github/stars/YassDEV221608/CVE-2024-6387_PoC.svg) 
+![forks](https://img.shields.io/github/forks/YassDEV221608/CVE-2024-6387_PoC.svg) 
+2025-01-04T00:37:14Z
+
 - [https://github.com/kuffsit/check_cve_2024_6387](https://github.com/kuffsit/check_cve_2024_6387) :  
 ![starts](https://img.shields.io/github/stars/kuffsit/check_cve_2024_6387.svg) 
 ![forks](https://img.shields.io/github/forks/kuffsit/check_cve_2024_6387.svg) 
@@ -1095,6 +1388,11 @@
 ![forks](https://img.shields.io/github/forks/prelearn-code/CVE-2024-6387.svg) 
 2024-07-25T02:37:55Z
 
+- [https://github.com/betancour/OpenSSH-Vulnerability-test](https://github.com/betancour/OpenSSH-Vulnerability-test) :  
+![starts](https://img.shields.io/github/stars/betancour/OpenSSH-Vulnerability-test.svg) 
+![forks](https://img.shields.io/github/forks/betancour/OpenSSH-Vulnerability-test.svg) 
+2024-07-02T01:31:11Z
+
 - [https://github.com/Symbolexe/CVE-2024-6387](https://github.com/Symbolexe/CVE-2024-6387) :  
 ![starts](https://img.shields.io/github/stars/Symbolexe/CVE-2024-6387.svg) 
 ![forks](https://img.shields.io/github/forks/Symbolexe/CVE-2024-6387.svg) 
@@ -1110,20 +1408,15 @@
 ![forks](https://img.shields.io/github/forks/ThatNotEasy/CVE-2024-6387.svg) 
 2024-07-15T16:06:41Z
 
-- [https://github.com/betancour/OpenSSH-Vulnerability-test](https://github.com/betancour/OpenSSH-Vulnerability-test) :  
-![starts](https://img.shields.io/github/stars/betancour/OpenSSH-Vulnerability-test.svg) 
-![forks](https://img.shields.io/github/forks/betancour/OpenSSH-Vulnerability-test.svg) 
-2024-07-02T01:31:11Z
+- [https://github.com/muyuanlove/CVE-2024-6387fixshell](https://github.com/muyuanlove/CVE-2024-6387fixshell) :  
+![starts](https://img.shields.io/github/stars/muyuanlove/CVE-2024-6387fixshell.svg) 
+![forks](https://img.shields.io/github/forks/muyuanlove/CVE-2024-6387fixshell.svg) 
+2024-07-02T02:39:40Z
 
 - [https://github.com/ACHUX21/checker-CVE-2024-6387](https://github.com/ACHUX21/checker-CVE-2024-6387) :  
 ![starts](https://img.shields.io/github/stars/ACHUX21/checker-CVE-2024-6387.svg) 
 ![forks](https://img.shields.io/github/forks/ACHUX21/checker-CVE-2024-6387.svg) 
 2024-07-02T13:18:38Z
-
-- [https://github.com/muyuanlove/CVE-2024-6387fixshell](https://github.com/muyuanlove/CVE-2024-6387fixshell) :  
-![starts](https://img.shields.io/github/stars/muyuanlove/CVE-2024-6387fixshell.svg) 
-![forks](https://img.shields.io/github/forks/muyuanlove/CVE-2024-6387fixshell.svg) 
-2024-07-02T02:39:40Z
 
 - [https://github.com/identity-threat-labs/CVE-2024-6387-Vulnerability-Checker](https://github.com/identity-threat-labs/CVE-2024-6387-Vulnerability-Checker) :  
 ![starts](https://img.shields.io/github/stars/identity-threat-labs/CVE-2024-6387-Vulnerability-Checker.svg) 
@@ -1165,11 +1458,6 @@
 ![forks](https://img.shields.io/github/forks/SecWithMoh/CVE-2024-6387.svg) 
 2024-07-02T10:05:02Z
 
-- [https://github.com/n1cks0n/Test_CVE-2024-6387](https://github.com/n1cks0n/Test_CVE-2024-6387) :  
-![starts](https://img.shields.io/github/stars/n1cks0n/Test_CVE-2024-6387.svg) 
-![forks](https://img.shields.io/github/forks/n1cks0n/Test_CVE-2024-6387.svg) 
-2024-07-02T18:31:41Z
-
 - [https://github.com/shamo0/CVE-2024-6387_PoC](https://github.com/shamo0/CVE-2024-6387_PoC) :  
 ![starts](https://img.shields.io/github/stars/shamo0/CVE-2024-6387_PoC.svg) 
 ![forks](https://img.shields.io/github/forks/shamo0/CVE-2024-6387_PoC.svg) 
@@ -1179,6 +1467,11 @@
 ![starts](https://img.shields.io/github/stars/passwa11/cve-2024-6387-poc.svg) 
 ![forks](https://img.shields.io/github/forks/passwa11/cve-2024-6387-poc.svg) 
 2024-07-01T14:10:08Z
+
+- [https://github.com/n1cks0n/Test_CVE-2024-6387](https://github.com/n1cks0n/Test_CVE-2024-6387) :  
+![starts](https://img.shields.io/github/stars/n1cks0n/Test_CVE-2024-6387.svg) 
+![forks](https://img.shields.io/github/forks/n1cks0n/Test_CVE-2024-6387.svg) 
+2024-07-02T18:31:41Z
 
 - [https://github.com/identity-threat-labs/Article-RegreSSHion-CVE-2024-6387](https://github.com/identity-threat-labs/Article-RegreSSHion-CVE-2024-6387) :  
 ![starts](https://img.shields.io/github/stars/identity-threat-labs/Article-RegreSSHion-CVE-2024-6387.svg) 
@@ -1220,6 +1513,16 @@
 ![forks](https://img.shields.io/github/forks/SiberianHacker/CVE-2024-6387-Finder.svg) 
 2024-07-05T15:22:25Z
 
+- [https://github.com/jack0we/CVE-2024-6387](https://github.com/jack0we/CVE-2024-6387) :  
+![starts](https://img.shields.io/github/stars/jack0we/CVE-2024-6387.svg) 
+![forks](https://img.shields.io/github/forks/jack0we/CVE-2024-6387.svg) 
+2024-07-01T18:32:41Z
+
+- [https://github.com/sms2056/CVE-2024-6387](https://github.com/sms2056/CVE-2024-6387) :  
+![starts](https://img.shields.io/github/stars/sms2056/CVE-2024-6387.svg) 
+![forks](https://img.shields.io/github/forks/sms2056/CVE-2024-6387.svg) 
+2024-07-04T06:16:19Z
+
 - [https://github.com/no-one-sec/CVE-2024-6387](https://github.com/no-one-sec/CVE-2024-6387) :  
 ![starts](https://img.shields.io/github/stars/no-one-sec/CVE-2024-6387.svg) 
 ![forks](https://img.shields.io/github/forks/no-one-sec/CVE-2024-6387.svg) 
@@ -1235,30 +1538,20 @@
 ![forks](https://img.shields.io/github/forks/dawnl3ss/CVE-2024-6387.svg) 
 2024-07-02T15:14:37Z
 
-- [https://github.com/jack0we/CVE-2024-6387](https://github.com/jack0we/CVE-2024-6387) :  
-![starts](https://img.shields.io/github/stars/jack0we/CVE-2024-6387.svg) 
-![forks](https://img.shields.io/github/forks/jack0we/CVE-2024-6387.svg) 
-2024-07-01T18:32:41Z
-
-- [https://github.com/sms2056/CVE-2024-6387](https://github.com/sms2056/CVE-2024-6387) :  
-![starts](https://img.shields.io/github/stars/sms2056/CVE-2024-6387.svg) 
-![forks](https://img.shields.io/github/forks/sms2056/CVE-2024-6387.svg) 
-2024-07-04T06:16:19Z
-
-- [https://github.com/zql-gif/CVE-2024-6387](https://github.com/zql-gif/CVE-2024-6387) :  
-![starts](https://img.shields.io/github/stars/zql-gif/CVE-2024-6387.svg) 
-![forks](https://img.shields.io/github/forks/zql-gif/CVE-2024-6387.svg) 
-2024-12-19T06:49:52Z
+- [https://github.com/mrmtwoj/CVE-2024-6387](https://github.com/mrmtwoj/CVE-2024-6387) :  
+![starts](https://img.shields.io/github/stars/mrmtwoj/CVE-2024-6387.svg) 
+![forks](https://img.shields.io/github/forks/mrmtwoj/CVE-2024-6387.svg) 
+2024-07-09T14:29:30Z
 
 - [https://github.com/YassDEV221608/CVE-2024-6387](https://github.com/YassDEV221608/CVE-2024-6387) :  
 ![starts](https://img.shields.io/github/stars/YassDEV221608/CVE-2024-6387.svg) 
 ![forks](https://img.shields.io/github/forks/YassDEV221608/CVE-2024-6387.svg) 
 2024-11-24T17:14:29Z
 
-- [https://github.com/mrmtwoj/CVE-2024-6387](https://github.com/mrmtwoj/CVE-2024-6387) :  
-![starts](https://img.shields.io/github/stars/mrmtwoj/CVE-2024-6387.svg) 
-![forks](https://img.shields.io/github/forks/mrmtwoj/CVE-2024-6387.svg) 
-2024-07-09T14:29:30Z
+- [https://github.com/zql-gif/CVE-2024-6387](https://github.com/zql-gif/CVE-2024-6387) :  
+![starts](https://img.shields.io/github/stars/zql-gif/CVE-2024-6387.svg) 
+![forks](https://img.shields.io/github/forks/zql-gif/CVE-2024-6387.svg) 
+2024-12-19T06:49:52Z
 
 - [https://github.com/dream434/CVE-2024-6387](https://github.com/dream434/CVE-2024-6387) :  
 ![starts](https://img.shields.io/github/stars/dream434/CVE-2024-6387.svg) 
@@ -1270,15 +1563,35 @@
 ![forks](https://img.shields.io/github/forks/HadesNull123/CVE-2024-6387_Check.svg) 
 2024-08-26T04:41:02Z
 
+- [https://github.com/Mufti22/CVE-2024-6387-checkher](https://github.com/Mufti22/CVE-2024-6387-checkher) :  
+![starts](https://img.shields.io/github/stars/Mufti22/CVE-2024-6387-checkher.svg) 
+![forks](https://img.shields.io/github/forks/Mufti22/CVE-2024-6387-checkher.svg) 
+2024-07-02T03:49:06Z
+
 - [https://github.com/DimaMend/cve-2024-6387-poc](https://github.com/DimaMend/cve-2024-6387-poc) :  
 ![starts](https://img.shields.io/github/stars/DimaMend/cve-2024-6387-poc.svg) 
 ![forks](https://img.shields.io/github/forks/DimaMend/cve-2024-6387-poc.svg) 
 2024-07-10T13:33:50Z
 
-- [https://github.com/Mufti22/CVE-2024-6387-checkher](https://github.com/Mufti22/CVE-2024-6387-checkher) :  
-![starts](https://img.shields.io/github/stars/Mufti22/CVE-2024-6387-checkher.svg) 
-![forks](https://img.shields.io/github/forks/Mufti22/CVE-2024-6387-checkher.svg) 
-2024-07-02T03:49:06Z
+- [https://github.com/CognisysGroup/CVE-2024-6387-Checker](https://github.com/CognisysGroup/CVE-2024-6387-Checker) :  
+![starts](https://img.shields.io/github/stars/CognisysGroup/CVE-2024-6387-Checker.svg) 
+![forks](https://img.shields.io/github/forks/CognisysGroup/CVE-2024-6387-Checker.svg) 
+2024-07-03T12:13:37Z
+
+- [https://github.com/edsonjt81/CVE-2024-6387_Check](https://github.com/edsonjt81/CVE-2024-6387_Check) :  
+![starts](https://img.shields.io/github/stars/edsonjt81/CVE-2024-6387_Check.svg) 
+![forks](https://img.shields.io/github/forks/edsonjt81/CVE-2024-6387_Check.svg) 
+2024-07-02T20:38:06Z
+
+- [https://github.com/sardine-web/CVE-2024-6387-template](https://github.com/sardine-web/CVE-2024-6387-template) :  
+![starts](https://img.shields.io/github/stars/sardine-web/CVE-2024-6387-template.svg) 
+![forks](https://img.shields.io/github/forks/sardine-web/CVE-2024-6387-template.svg) 
+2024-07-06T17:26:21Z
+
+- [https://github.com/shyrwall/cve-2024-6387-poc](https://github.com/shyrwall/cve-2024-6387-poc) :  
+![starts](https://img.shields.io/github/stars/shyrwall/cve-2024-6387-poc.svg) 
+![forks](https://img.shields.io/github/forks/shyrwall/cve-2024-6387-poc.svg) 
+2024-07-01T12:50:29Z
 
 - [https://github.com/t3rry327/cve-2024-6387-poc](https://github.com/t3rry327/cve-2024-6387-poc) :  
 ![starts](https://img.shields.io/github/stars/t3rry327/cve-2024-6387-poc.svg) 
@@ -1290,40 +1603,15 @@
 ![forks](https://img.shields.io/github/forks/dgourillon/mitigate-CVE-2024-6387.svg) 
 2024-07-09T16:03:03Z
 
-- [https://github.com/shyrwall/cve-2024-6387-poc](https://github.com/shyrwall/cve-2024-6387-poc) :  
-![starts](https://img.shields.io/github/stars/shyrwall/cve-2024-6387-poc.svg) 
-![forks](https://img.shields.io/github/forks/shyrwall/cve-2024-6387-poc.svg) 
-2024-07-01T12:50:29Z
-
-- [https://github.com/zenzue/CVE-2024-6387-Mitigation](https://github.com/zenzue/CVE-2024-6387-Mitigation) :  
-![starts](https://img.shields.io/github/stars/zenzue/CVE-2024-6387-Mitigation.svg) 
-![forks](https://img.shields.io/github/forks/zenzue/CVE-2024-6387-Mitigation.svg) 
-2024-07-02T11:17:12Z
-
 - [https://github.com/sardine-web/CVE-2024-6387_Check](https://github.com/sardine-web/CVE-2024-6387_Check) :  
 ![starts](https://img.shields.io/github/stars/sardine-web/CVE-2024-6387_Check.svg) 
 ![forks](https://img.shields.io/github/forks/sardine-web/CVE-2024-6387_Check.svg) 
 2024-07-04T21:31:17Z
 
-- [https://github.com/edsonjt81/CVE-2024-6387_Check](https://github.com/edsonjt81/CVE-2024-6387_Check) :  
-![starts](https://img.shields.io/github/stars/edsonjt81/CVE-2024-6387_Check.svg) 
-![forks](https://img.shields.io/github/forks/edsonjt81/CVE-2024-6387_Check.svg) 
-2024-07-02T20:38:06Z
-
-- [https://github.com/CognisysGroup/CVE-2024-6387-Checker](https://github.com/CognisysGroup/CVE-2024-6387-Checker) :  
-![starts](https://img.shields.io/github/stars/CognisysGroup/CVE-2024-6387-Checker.svg) 
-![forks](https://img.shields.io/github/forks/CognisysGroup/CVE-2024-6387-Checker.svg) 
-2024-07-03T12:13:37Z
-
-- [https://github.com/sardine-web/CVE-2024-6387-template](https://github.com/sardine-web/CVE-2024-6387-template) :  
-![starts](https://img.shields.io/github/stars/sardine-web/CVE-2024-6387-template.svg) 
-![forks](https://img.shields.io/github/forks/sardine-web/CVE-2024-6387-template.svg) 
-2024-07-06T17:26:21Z
-
-- [https://github.com/skyalliance/CVE-2024-6387-POC](https://github.com/skyalliance/CVE-2024-6387-POC) :  
-![starts](https://img.shields.io/github/stars/skyalliance/CVE-2024-6387-POC.svg) 
-![forks](https://img.shields.io/github/forks/skyalliance/CVE-2024-6387-POC.svg) 
-2024-07-02T13:24:37Z
+- [https://github.com/zenzue/CVE-2024-6387-Mitigation](https://github.com/zenzue/CVE-2024-6387-Mitigation) :  
+![starts](https://img.shields.io/github/stars/zenzue/CVE-2024-6387-Mitigation.svg) 
+![forks](https://img.shields.io/github/forks/zenzue/CVE-2024-6387-Mitigation.svg) 
+2024-07-02T11:17:12Z
 
 - [https://github.com/RickGeex/CVE-2024-6387-Checker](https://github.com/RickGeex/CVE-2024-6387-Checker) :  
 ![starts](https://img.shields.io/github/stars/RickGeex/CVE-2024-6387-Checker.svg) 
@@ -1335,20 +1623,10 @@
 ![forks](https://img.shields.io/github/forks/jocker2410/CVE-2024-6387_poc.svg) 
 2024-08-04T10:50:53Z
 
-- [https://github.com/anhvutuan/CVE-2024-6387-poc-1](https://github.com/anhvutuan/CVE-2024-6387-poc-1) :  
-![starts](https://img.shields.io/github/stars/anhvutuan/CVE-2024-6387-poc-1.svg) 
-![forks](https://img.shields.io/github/forks/anhvutuan/CVE-2024-6387-poc-1.svg) 
-2024-07-11T14:59:20Z
-
-- [https://github.com/invaderslabs/regreSSHion-CVE-2024-6387-](https://github.com/invaderslabs/regreSSHion-CVE-2024-6387-) :  
-![starts](https://img.shields.io/github/stars/invaderslabs/regreSSHion-CVE-2024-6387-.svg) 
-![forks](https://img.shields.io/github/forks/invaderslabs/regreSSHion-CVE-2024-6387-.svg) 
-2024-07-04T22:22:15Z
-
-- [https://github.com/YassDEV221608/CVE-2024-6387_PoC](https://github.com/YassDEV221608/CVE-2024-6387_PoC) :  
-![starts](https://img.shields.io/github/stars/YassDEV221608/CVE-2024-6387_PoC.svg) 
-![forks](https://img.shields.io/github/forks/YassDEV221608/CVE-2024-6387_PoC.svg) 
-2025-01-04T00:37:14Z
+- [https://github.com/skyalliance/CVE-2024-6387-POC](https://github.com/skyalliance/CVE-2024-6387-POC) :  
+![starts](https://img.shields.io/github/stars/skyalliance/CVE-2024-6387-POC.svg) 
+![forks](https://img.shields.io/github/forks/skyalliance/CVE-2024-6387-POC.svg) 
+2024-07-02T13:24:37Z
 
 - [https://github.com/JackSparrowhk/ssh-CVE-2024-6387-poc](https://github.com/JackSparrowhk/ssh-CVE-2024-6387-poc) :  
 ![starts](https://img.shields.io/github/stars/JackSparrowhk/ssh-CVE-2024-6387-poc.svg) 
@@ -1360,20 +1638,30 @@
 ![forks](https://img.shields.io/github/forks/kubota/CVE-2024-6387-Vulnerability-Checker.svg) 
 2024-07-09T21:08:19Z
 
+- [https://github.com/anhvutuan/CVE-2024-6387-poc-1](https://github.com/anhvutuan/CVE-2024-6387-poc-1) :  
+![starts](https://img.shields.io/github/stars/anhvutuan/CVE-2024-6387-poc-1.svg) 
+![forks](https://img.shields.io/github/forks/anhvutuan/CVE-2024-6387-poc-1.svg) 
+2024-07-11T14:59:20Z
+
+- [https://github.com/invaderslabs/regreSSHion-CVE-2024-6387-](https://github.com/invaderslabs/regreSSHion-CVE-2024-6387-) :  
+![starts](https://img.shields.io/github/stars/invaderslabs/regreSSHion-CVE-2024-6387-.svg) 
+![forks](https://img.shields.io/github/forks/invaderslabs/regreSSHion-CVE-2024-6387-.svg) 
+2024-07-04T22:22:15Z
+
 - [https://github.com/4lxprime/regreSSHive](https://github.com/4lxprime/regreSSHive) :  
 ![starts](https://img.shields.io/github/stars/4lxprime/regreSSHive.svg) 
 ![forks](https://img.shields.io/github/forks/4lxprime/regreSSHive.svg) 
 2024-07-04T14:34:23Z
 
-- [https://github.com/daniel-odrinski/CVE-2024-6387-Mitigation-Ansible-Playbook](https://github.com/daniel-odrinski/CVE-2024-6387-Mitigation-Ansible-Playbook) :  
-![starts](https://img.shields.io/github/stars/daniel-odrinski/CVE-2024-6387-Mitigation-Ansible-Playbook.svg) 
-![forks](https://img.shields.io/github/forks/daniel-odrinski/CVE-2024-6387-Mitigation-Ansible-Playbook.svg) 
-2024-07-02T11:05:55Z
-
 - [https://github.com/almogopp/OpenSSH-CVE-2024-6387-Fix](https://github.com/almogopp/OpenSSH-CVE-2024-6387-Fix) :  
 ![starts](https://img.shields.io/github/stars/almogopp/OpenSSH-CVE-2024-6387-Fix.svg) 
 ![forks](https://img.shields.io/github/forks/almogopp/OpenSSH-CVE-2024-6387-Fix.svg) 
 2024-08-20T09:58:32Z
+
+- [https://github.com/daniel-odrinski/CVE-2024-6387-Mitigation-Ansible-Playbook](https://github.com/daniel-odrinski/CVE-2024-6387-Mitigation-Ansible-Playbook) :  
+![starts](https://img.shields.io/github/stars/daniel-odrinski/CVE-2024-6387-Mitigation-Ansible-Playbook.svg) 
+![forks](https://img.shields.io/github/forks/daniel-odrinski/CVE-2024-6387-Mitigation-Ansible-Playbook.svg) 
+2024-07-02T11:05:55Z
 
 - [https://github.com/Passyed/regreSSHion-Fix](https://github.com/Passyed/regreSSHion-Fix) :  
 ![starts](https://img.shields.io/github/stars/Passyed/regreSSHion-Fix.svg) 
@@ -1467,54 +1755,6 @@
 ![forks](https://img.shields.io/github/forks/RandomRobbieBF/CVE-2024-54374.svg) 
 2025-01-03T10:09:57Z
 
-## CVE-2024-53677
- File upload logic in Apache Struts is flawed.An attacker can manipulate file upload params to enable paths traversal and under some circumstances this can lead to uploading a malicious file which can be used to perform Remote Code Execution.This issue affects Apache Struts: from 2.0.0 before 6.4.0.Users are recommended to upgrade to version 6.4.0 at least and migrate to the new  file upload mechanism https://struts.apache.org/core-developers/file-upload . If you are not using an old file upload logic based onFileuploadInterceptoryour application is safe.You can find more details in https://cwiki.apache.org/confluence/display/WW/S2-067
-
-- [https://github.com/TAM-K592/CVE-2024-53677-S2-067](https://github.com/TAM-K592/CVE-2024-53677-S2-067) :  
-![starts](https://img.shields.io/github/stars/TAM-K592/CVE-2024-53677-S2-067.svg) 
-![forks](https://img.shields.io/github/forks/TAM-K592/CVE-2024-53677-S2-067.svg) 
-2024-12-20T10:05:15Z
-
-- [https://github.com/cloudwafs/s2-067-CVE-2024-53677](https://github.com/cloudwafs/s2-067-CVE-2024-53677) :  
-![starts](https://img.shields.io/github/stars/cloudwafs/s2-067-CVE-2024-53677.svg) 
-![forks](https://img.shields.io/github/forks/cloudwafs/s2-067-CVE-2024-53677.svg) 
-2024-12-17T10:37:17Z
-
-- [https://github.com/XiaomingX/CVE-2024-53677-S2-067](https://github.com/XiaomingX/CVE-2024-53677-S2-067) :  
-![starts](https://img.shields.io/github/stars/XiaomingX/CVE-2024-53677-S2-067.svg) 
-![forks](https://img.shields.io/github/forks/XiaomingX/CVE-2024-53677-S2-067.svg) 
-2024-12-18T02:08:09Z
-
-- [https://github.com/EQSTLab/CVE-2024-53677](https://github.com/EQSTLab/CVE-2024-53677) :  
-![starts](https://img.shields.io/github/stars/EQSTLab/CVE-2024-53677.svg) 
-![forks](https://img.shields.io/github/forks/EQSTLab/CVE-2024-53677.svg) 
-2025-01-03T18:51:20Z
-
-- [https://github.com/c4oocO/CVE-2024-53677-Docker](https://github.com/c4oocO/CVE-2024-53677-Docker) :  
-![starts](https://img.shields.io/github/stars/c4oocO/CVE-2024-53677-Docker.svg) 
-![forks](https://img.shields.io/github/forks/c4oocO/CVE-2024-53677-Docker.svg) 
-2024-12-17T07:01:11Z
-
-- [https://github.com/dustblessnotdust/CVE-2024-53677-S2-067-thread](https://github.com/dustblessnotdust/CVE-2024-53677-S2-067-thread) :  
-![starts](https://img.shields.io/github/stars/dustblessnotdust/CVE-2024-53677-S2-067-thread.svg) 
-![forks](https://img.shields.io/github/forks/dustblessnotdust/CVE-2024-53677-S2-067-thread.svg) 
-2024-12-18T19:10:48Z
-
-- [https://github.com/yangyanglo/CVE-2024-53677](https://github.com/yangyanglo/CVE-2024-53677) :  
-![starts](https://img.shields.io/github/stars/yangyanglo/CVE-2024-53677.svg) 
-![forks](https://img.shields.io/github/forks/yangyanglo/CVE-2024-53677.svg) 
-2024-12-17T08:52:36Z
-
-- [https://github.com/Q0LT/VM-CVE-2024-53677](https://github.com/Q0LT/VM-CVE-2024-53677) :  
-![starts](https://img.shields.io/github/stars/Q0LT/VM-CVE-2024-53677.svg) 
-![forks](https://img.shields.io/github/forks/Q0LT/VM-CVE-2024-53677.svg) 
-2024-12-23T17:31:32Z
-
-- [https://github.com/0xdeviner/CVE-2024-53677](https://github.com/0xdeviner/CVE-2024-53677) :  
-![starts](https://img.shields.io/github/stars/0xdeviner/CVE-2024-53677.svg) 
-![forks](https://img.shields.io/github/forks/0xdeviner/CVE-2024-53677.svg) 
-2024-12-23T14:27:51Z
-
 ## CVE-2024-51378
  getresetstatus in dns/views.py and ftp/views.py in CyberPanel (aka Cyber Panel) before 1c0c6cb allows remote attackers to bypass authentication and execute arbitrary commands via /dns/getresetstatus or /ftp/getresetstatus by bypassing secMiddleware (which is only for a POST request) and using shell metacharacters in the statusfile property, as exploited in the wild in October 2024 by PSAUX. Versions through 2.3.6 and (unpatched) 2.3.7 are affected.
 
@@ -1545,29 +1785,6 @@
 ![starts](https://img.shields.io/github/stars/Nxploited/CVE-2024-50498.svg) 
 ![forks](https://img.shields.io/github/forks/Nxploited/CVE-2024-50498.svg) 
 2025-01-03T22:53:10Z
-
-## CVE-2024-49112
- Windows Lightweight Directory Access Protocol (LDAP) Remote Code Execution Vulnerability
-
-- [https://github.com/tnkr/poc_monitor](https://github.com/tnkr/poc_monitor) :  
-![starts](https://img.shields.io/github/stars/tnkr/poc_monitor.svg) 
-![forks](https://img.shields.io/github/forks/tnkr/poc_monitor.svg) 
-2024-12-16T19:35:02Z
-
-- [https://github.com/CCIEVoice2009/CVE-2024-49112](https://github.com/CCIEVoice2009/CVE-2024-49112) :  
-![starts](https://img.shields.io/github/stars/CCIEVoice2009/CVE-2024-49112.svg) 
-![forks](https://img.shields.io/github/forks/CCIEVoice2009/CVE-2024-49112.svg) 
-2025-01-02T14:04:01Z
-
-- [https://github.com/BOl1o/CVE-2024-49112-RCE-PoC](https://github.com/BOl1o/CVE-2024-49112-RCE-PoC) :  
-![starts](https://img.shields.io/github/stars/BOl1o/CVE-2024-49112-RCE-PoC.svg) 
-![forks](https://img.shields.io/github/forks/BOl1o/CVE-2024-49112-RCE-PoC.svg) 
-2025-01-03T01:43:26Z
-
-- [https://github.com/BOl1o/CVE-2024-49112-PoC](https://github.com/BOl1o/CVE-2024-49112-PoC) :  
-![starts](https://img.shields.io/github/stars/BOl1o/CVE-2024-49112-PoC.svg) 
-![forks](https://img.shields.io/github/forks/BOl1o/CVE-2024-49112-PoC.svg) 
-2024-12-25T02:08:50Z
 
 ## CVE-2024-46538
  A cross-site scripting (XSS) vulnerability in pfsense v2.5.2 allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the $pconfig variable at interfaces_groups_edit.php.
@@ -2244,103 +2461,4 @@
 ![starts](https://img.shields.io/github/stars/kursadalsan/CVE-2024-21182.svg) 
 ![forks](https://img.shields.io/github/forks/kursadalsan/CVE-2024-21182.svg) 
 2024-12-29T15:56:14Z
-
-# 2024-12-28
-## CVE-2024-30085
- Windows Cloud Files Mini Filter Driver Elevation of Privilege Vulnerability
-
-- [https://github.com/Adamkadaban/CVE-2024-30085](https://github.com/Adamkadaban/CVE-2024-30085) :  
-![starts](https://img.shields.io/github/stars/Adamkadaban/CVE-2024-30085.svg) 
-![forks](https://img.shields.io/github/forks/Adamkadaban/CVE-2024-30085.svg) 
-2024-12-27T02:08:14Z
-
-- [https://github.com/murdok1982/Exploit-PoC-para-CVE-2024-30085](https://github.com/murdok1982/Exploit-PoC-para-CVE-2024-30085) :  
-![starts](https://img.shields.io/github/stars/murdok1982/Exploit-PoC-para-CVE-2024-30085.svg) 
-![forks](https://img.shields.io/github/forks/murdok1982/Exploit-PoC-para-CVE-2024-30085.svg) 
-2024-12-28T10:12:37Z
-
-## CVE-2024-23828
- Nginx-UI is a web interface to manage Nginx configurations. It is vulnerable to an authenticated arbitrary command execution via CRLF attack when changing the value of test_config_cmd or start_cmd. This vulnerability exists due to an incomplete fix for CVE-2024-22197 and CVE-2024-22198. This vulnerability has been patched in version 2.0.0.beta.12.
-
-- [https://github.com/oxagast/oxasploits](https://github.com/oxagast/oxasploits) :  
-![starts](https://img.shields.io/github/stars/oxagast/oxasploits.svg) 
-![forks](https://img.shields.io/github/forks/oxagast/oxasploits.svg) 
-2024-12-28T14:26:44Z
-
-## CVE-2024-11972
- The Hunk Companion WordPress plugin before 1.9.0 does not correctly authorize some REST API endpoints, allowing unauthenticated requests to install and activate arbitrary Hunk Companion WordPress plugin before 1.9.0 from the WordPress.org repo, including vulnerable Hunk Companion WordPress plugin before 1.9.0 that have been closed.
-
-- [https://github.com/JunTakemura/exploit-CVE-2024-11972](https://github.com/JunTakemura/exploit-CVE-2024-11972) :  
-![starts](https://img.shields.io/github/stars/JunTakemura/exploit-CVE-2024-11972.svg) 
-![forks](https://img.shields.io/github/forks/JunTakemura/exploit-CVE-2024-11972.svg) 
-2024-12-28T16:44:15Z
-
-## CVE-2024-11616
- Netskope was made aware of a security vulnerability in Netskope Endpoint DLPs Content Control Driver where a double-fetch issue leads to heap overflow. The vulnerability arises from the fact that the NumberOfBytesargument to ExAllocatePoolWithTag, and the Length argument for RtlCopyMemory, both independently dereference their value from the user supplied input buffer inside the EpdlpSetUsbActionfunction, known as a double-fetch. If this length value grows to a higher value in between these two calls, it will result in the RtlCopyMemorycall copying user-supplied memory contents outside the range of the allocated buffer, resulting in a heap overflow. A malicious attacker will need admin privileges to exploit the issue.This issue affects Endpoint DLP version below R119.
-
-- [https://github.com/inb1ts/CVE-2024-11616](https://github.com/inb1ts/CVE-2024-11616) :  
-![starts](https://img.shields.io/github/stars/inb1ts/CVE-2024-11616.svg) 
-![forks](https://img.shields.io/github/forks/inb1ts/CVE-2024-11616.svg) 
-2024-12-28T11:39:19Z
-
-## CVE-2024-9234
- The GutenKit  Page Builder Blocks, Patterns, and Templates for Gutenberg Block Editor plugin for WordPress is vulnerable to arbitrary file uploads due to a missing capability check on the install_and_activate_plugin_from_external() function  (install-active-plugin REST API endpoint) in all versions up to, and including, 2.1.0. This makes it possible for unauthenticated attackers to install and activate arbitrary plugins, or utilize the functionality to upload arbitrary files spoofed like plugins.
-
-- [https://github.com/RandomRobbieBF/CVE-2024-9234](https://github.com/RandomRobbieBF/CVE-2024-9234) :  
-![starts](https://img.shields.io/github/stars/RandomRobbieBF/CVE-2024-9234.svg) 
-![forks](https://img.shields.io/github/forks/RandomRobbieBF/CVE-2024-9234.svg) 
-2024-10-17T18:49:22Z
-
-- [https://github.com/Nxploited/CVE-2024-9234](https://github.com/Nxploited/CVE-2024-9234) :  
-![starts](https://img.shields.io/github/stars/Nxploited/CVE-2024-9234.svg) 
-![forks](https://img.shields.io/github/forks/Nxploited/CVE-2024-9234.svg) 
-2024-12-28T11:11:31Z
-
-- [https://github.com/CallMeBatosay/CVE-2024-9234](https://github.com/CallMeBatosay/CVE-2024-9234) :  
-![starts](https://img.shields.io/github/stars/CallMeBatosay/CVE-2024-9234.svg) 
-![forks](https://img.shields.io/github/forks/CallMeBatosay/CVE-2024-9234.svg) 
-2024-11-07T05:04:18Z
-
-## CVE-2024-7954
- The porte_plume plugin used by SPIP before 4.30-alpha2, 4.2.13, and 4.1.16 is vulnerable to an arbitrary code execution vulnerability. A remote and unauthenticated attacker can execute arbitrary PHP as the SPIP user by sending a crafted HTTP request.
-
-- [https://github.com/Chocapikk/CVE-2024-7954](https://github.com/Chocapikk/CVE-2024-7954) :  
-![starts](https://img.shields.io/github/stars/Chocapikk/CVE-2024-7954.svg) 
-![forks](https://img.shields.io/github/forks/Chocapikk/CVE-2024-7954.svg) 
-2024-08-12T13:46:06Z
-
-- [https://github.com/gh-ost00/CVE-2024-7954-RCE](https://github.com/gh-ost00/CVE-2024-7954-RCE) :  
-![starts](https://img.shields.io/github/stars/gh-ost00/CVE-2024-7954-RCE.svg) 
-![forks](https://img.shields.io/github/forks/gh-ost00/CVE-2024-7954-RCE.svg) 
-2024-09-01T11:07:15Z
-
-- [https://github.com/bigb0x/CVE-2024-7954](https://github.com/bigb0x/CVE-2024-7954) :  
-![starts](https://img.shields.io/github/stars/bigb0x/CVE-2024-7954.svg) 
-![forks](https://img.shields.io/github/forks/bigb0x/CVE-2024-7954.svg) 
-2024-08-28T18:26:25Z
-
-- [https://github.com/MuhammadWaseem29/RCE-CVE-2024-7954](https://github.com/MuhammadWaseem29/RCE-CVE-2024-7954) :  
-![starts](https://img.shields.io/github/stars/MuhammadWaseem29/RCE-CVE-2024-7954.svg) 
-![forks](https://img.shields.io/github/forks/MuhammadWaseem29/RCE-CVE-2024-7954.svg) 
-2024-10-05T07:55:00Z
-
-- [https://github.com/TheCyberguy-17/RCE_CVE-2024-7954](https://github.com/TheCyberguy-17/RCE_CVE-2024-7954) :  
-![starts](https://img.shields.io/github/stars/TheCyberguy-17/RCE_CVE-2024-7954.svg) 
-![forks](https://img.shields.io/github/forks/TheCyberguy-17/RCE_CVE-2024-7954.svg) 
-2024-09-23T16:27:12Z
-
-- [https://github.com/issamjr/CVE-2024-7954](https://github.com/issamjr/CVE-2024-7954) :  
-![starts](https://img.shields.io/github/stars/issamjr/CVE-2024-7954.svg) 
-![forks](https://img.shields.io/github/forks/issamjr/CVE-2024-7954.svg) 
-2024-11-15T21:10:55Z
-
-- [https://github.com/0dayan0n/RCE_CVE-2024-7954-](https://github.com/0dayan0n/RCE_CVE-2024-7954-) :  
-![starts](https://img.shields.io/github/stars/0dayan0n/RCE_CVE-2024-7954-.svg) 
-![forks](https://img.shields.io/github/forks/0dayan0n/RCE_CVE-2024-7954-.svg) 
-2024-12-28T01:20:12Z
-
-- [https://github.com/zxj-hub/CVE-2024-7954POC](https://github.com/zxj-hub/CVE-2024-7954POC) :  
-![starts](https://img.shields.io/github/stars/zxj-hub/CVE-2024-7954POC.svg) 
-![forks](https://img.shields.io/github/forks/zxj-hub/CVE-2024-7954POC.svg) 
-2024-12-20T15:40:36Z
 

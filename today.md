@@ -1,7 +1,7 @@
 # 2025-02-11
 ## CVE-2024-49138
  Windows Common Log File System Driver Elevation of Privilege Vulnerability
-
+ 
 - [https://github.com/MrAle98/CVE-2024-49138-POC](https://github.com/MrAle98/CVE-2024-49138-POC) :  
 ![starts](https://img.shields.io/github/stars/MrAle98/CVE-2024-49138-POC.svg) 
 ![forks](https://img.shields.io/github/forks/MrAle98/CVE-2024-49138-POC.svg) 

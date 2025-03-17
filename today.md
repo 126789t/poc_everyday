@@ -1,11 +1,57 @@
-# 2025-03-16
-## CVE-2025-22604
- Cacti is an open source performance and fault management framework. Due to a flaw in multi-line SNMP result parser, authenticated users can inject malformed OIDs in the response. When processed by ss_net_snmp_disk_io() or ss_net_snmp_disk_bytes(), a part of each OID will be used as a key in an array that is used as part of a system command, causing a command execution vulnerability. This vulnerability is fixed in 1.2.29.
+# 2025-03-17
+## CVE-2025-30066
+ tj-actions changed-files before 46 allows remote attackers to discover secrets by reading actions logs. (The tags v1 through v45.0.7 were affected on 2025-03-14 and 2025-03-15 because they were modified by a threat actor to point at commit 0e58ed8, which contained malicious updateFeatures code.)
 
-- [https://github.com/ishwardeepp/CVE-2025-22604-Cacti-RCE](https://github.com/ishwardeepp/CVE-2025-22604-Cacti-RCE) :  
-![starts](https://img.shields.io/github/stars/ishwardeepp/CVE-2025-22604-Cacti-RCE.svg) 
-![forks](https://img.shields.io/github/forks/ishwardeepp/CVE-2025-22604-Cacti-RCE.svg) 
-2025-03-16T09:21:50Z
+- [https://github.com/OS-pedrogustavobilro/test-changed-files](https://github.com/OS-pedrogustavobilro/test-changed-files) :  
+![starts](https://img.shields.io/github/stars/OS-pedrogustavobilro/test-changed-files.svg) 
+![forks](https://img.shields.io/github/forks/OS-pedrogustavobilro/test-changed-files.svg) 
+2025-03-17T10:07:10Z
+
+## CVE-2025-25763
+ crmeb CRMEB-KY v5.4.0 and before has a SQL Injection vulnerability at getRead() in /system/SystemDatabackupServices.php
+
+- [https://github.com/Oyst3r1ng/CVE-2025-25763](https://github.com/Oyst3r1ng/CVE-2025-25763) :  
+![starts](https://img.shields.io/github/stars/Oyst3r1ng/CVE-2025-25763.svg) 
+![forks](https://img.shields.io/github/forks/Oyst3r1ng/CVE-2025-25763.svg) 
+2025-03-17T05:58:52Z
+
+## CVE-2025-24813
+ Path Equivalence: 'file.Name' (Internal Dot) leading toRemote Code Execution and/or Information disclosureand/or malicious content added to uploaded files via write enabledDefault Servletin Apache Tomcat.This issue affects Apache Tomcat: from 11.0.0-M1 through 11.0.2, from 10.1.0-M1 through 10.1.34, from 9.0.0.M1 through 9.0.98.If all of the following were true, a malicious user was able to view       security sensitive files and/or inject content into those files:-writes enabled for the default servlet (disabled by default)- support for partial PUT (enabled by default)- a target URL for security sensitive uploads that was a sub-directory ofa target URL for public uploads-attacker knowledge of the names of security sensitive files beinguploaded-the security sensitive files also being uploaded via partial PUTIf all of the following were true, a malicious user was able to       perform remote code execution:- writes enabled for the default servlet (disabled by default)-support for partial PUT (enabled by default)-application was using Tomcat's file based session persistence with thedefault storage location-application included a library that may be leveraged in adeserialization attackUsers are recommended to upgrade to version 11.0.3, 10.1.35 or 9.0.98, which fixes the issue.
+
+- [https://github.com/iSee857/CVE-2025-24813-PoC](https://github.com/iSee857/CVE-2025-24813-PoC) :  
+![starts](https://img.shields.io/github/stars/iSee857/CVE-2025-24813-PoC.svg) 
+![forks](https://img.shields.io/github/forks/iSee857/CVE-2025-24813-PoC.svg) 
+2025-03-13T10:06:35Z
+
+- [https://github.com/absholi7ly/POC-CVE-2025-24813](https://github.com/absholi7ly/POC-CVE-2025-24813) :  
+![starts](https://img.shields.io/github/stars/absholi7ly/POC-CVE-2025-24813.svg) 
+![forks](https://img.shields.io/github/forks/absholi7ly/POC-CVE-2025-24813.svg) 
+2025-03-14T07:57:27Z
+
+- [https://github.com/FY036/cve-2025-24813_poc](https://github.com/FY036/cve-2025-24813_poc) :  
+![starts](https://img.shields.io/github/stars/FY036/cve-2025-24813_poc.svg) 
+![forks](https://img.shields.io/github/forks/FY036/cve-2025-24813_poc.svg) 
+2025-03-14T08:04:00Z
+
+- [https://github.com/N0c1or/CVE-2025-24813_POC](https://github.com/N0c1or/CVE-2025-24813_POC) :  
+![starts](https://img.shields.io/github/stars/N0c1or/CVE-2025-24813_POC.svg) 
+![forks](https://img.shields.io/github/forks/N0c1or/CVE-2025-24813_POC.svg) 
+2025-03-15T22:08:29Z
+
+- [https://github.com/charis3306/CVE-2025-24813](https://github.com/charis3306/CVE-2025-24813) :  
+![starts](https://img.shields.io/github/stars/charis3306/CVE-2025-24813.svg) 
+![forks](https://img.shields.io/github/forks/charis3306/CVE-2025-24813.svg) 
+2025-03-16T12:11:18Z
+
+- [https://github.com/gregk4sec/CVE-2025-24813](https://github.com/gregk4sec/CVE-2025-24813) :  
+![starts](https://img.shields.io/github/stars/gregk4sec/CVE-2025-24813.svg) 
+![forks](https://img.shields.io/github/forks/gregk4sec/CVE-2025-24813.svg) 
+2025-03-14T07:47:24Z
+
+- [https://github.com/issamjr/CVE-2025-24813-Scanner](https://github.com/issamjr/CVE-2025-24813-Scanner) :  
+![starts](https://img.shields.io/github/stars/issamjr/CVE-2025-24813-Scanner.svg) 
+![forks](https://img.shields.io/github/forks/issamjr/CVE-2025-24813-Scanner.svg) 
+2025-03-17T04:06:38Z
 
 ## CVE-2025-21333
  Windows Hyper-V NT Kernel Integration VSP Elevation of Privilege Vulnerability
@@ -23,7 +69,7 @@
 - [https://github.com/Mukesh-blend/CVE-2025-21333-POC](https://github.com/Mukesh-blend/CVE-2025-21333-POC) :  
 ![starts](https://img.shields.io/github/stars/Mukesh-blend/CVE-2025-21333-POC.svg) 
 ![forks](https://img.shields.io/github/forks/Mukesh-blend/CVE-2025-21333-POC.svg) 
-2025-03-16T11:48:39Z
+2025-03-17T11:45:34Z
 
 ## CVE-2025-0411
  7-Zip Mark-of-the-Web Bypass Vulnerability. This vulnerability allows remote attackers to bypass the Mark-of-the-Web protection mechanism on affected installations of 7-Zip. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.The specific flaw exists within the handling of archived files. When extracting files from a crafted archive that bears the Mark-of-the-Web, 7-Zip does not propagate the Mark-of-the-Web to the extracted files. An attacker can leverage this vulnerability to execute arbitrary code in the context of the current user. Was ZDI-CAN-25456.
@@ -46,80 +92,30 @@
 - [https://github.com/dpextreme/7-Zip-CVE-2025-0411-POC](https://github.com/dpextreme/7-Zip-CVE-2025-0411-POC) :  
 ![starts](https://img.shields.io/github/stars/dpextreme/7-Zip-CVE-2025-0411-POC.svg) 
 ![forks](https://img.shields.io/github/forks/dpextreme/7-Zip-CVE-2025-0411-POC.svg) 
-2025-03-16T12:11:47Z
+2025-03-17T12:10:47Z
+
+- [https://github.com/SalehAlgnay/7-Zip-CVE-2025-0411-POC](https://github.com/SalehAlgnay/7-Zip-CVE-2025-0411-POC) :  
+![starts](https://img.shields.io/github/stars/SalehAlgnay/7-Zip-CVE-2025-0411-POC.svg) 
+![forks](https://img.shields.io/github/forks/SalehAlgnay/7-Zip-CVE-2025-0411-POC.svg) 
+2025-03-17T12:11:14Z
 
 - [https://github.com/ishwardeepp/CVE-2025-0411-MoTW-PoC](https://github.com/ishwardeepp/CVE-2025-0411-MoTW-PoC) :  
 ![starts](https://img.shields.io/github/stars/ishwardeepp/CVE-2025-0411-MoTW-PoC.svg) 
 ![forks](https://img.shields.io/github/forks/ishwardeepp/CVE-2025-0411-MoTW-PoC.svg) 
 2025-03-12T11:54:18Z
 
-## CVE-2024-23334
- aiohttp is an asynchronous HTTP client/server framework for asyncio and Python. When using aiohttp as a web server and configuring static routes, it is necessary to specify the root path for static files. Additionally, the option 'follow_symlinks' can be used to determine whether to follow symbolic links outside the static root directory. When 'follow_symlinks' is set to True, there is no validation to check if reading a file is within the root directory. This can lead to directory traversal vulnerabilities, resulting in unauthorized access to arbitrary files on the system, even when symlinks are not present.  Disabling follow_symlinks and using a reverse proxy are encouraged mitigations.  Version 3.9.2 fixes this issue.
+## CVE-2024-31317
+ In multiple functions of ZygoteProcess.java, there is a possible way to achieve code execution as any app via WRITE_SECURE_SETTINGS due to unsafe deserialization. This could lead to local escalation of privilege with User execution privileges needed. User interaction is not needed for exploitation.
 
-- [https://github.com/jhonnybonny/CVE-2024-23334](https://github.com/jhonnybonny/CVE-2024-23334) :  
-![starts](https://img.shields.io/github/stars/jhonnybonny/CVE-2024-23334.svg) 
-![forks](https://img.shields.io/github/forks/jhonnybonny/CVE-2024-23334.svg) 
-2024-03-19T17:06:26Z
+- [https://github.com/fuhei/CVE-2024-31317](https://github.com/fuhei/CVE-2024-31317) :  
+![starts](https://img.shields.io/github/stars/fuhei/CVE-2024-31317.svg) 
+![forks](https://img.shields.io/github/forks/fuhei/CVE-2024-31317.svg) 
+2024-12-05T01:52:45Z
 
-- [https://github.com/z3rObyte/CVE-2024-23334-PoC](https://github.com/z3rObyte/CVE-2024-23334-PoC) :  
-![starts](https://img.shields.io/github/stars/z3rObyte/CVE-2024-23334-PoC.svg) 
-![forks](https://img.shields.io/github/forks/z3rObyte/CVE-2024-23334-PoC.svg) 
-2024-03-19T06:37:30Z
-
-- [https://github.com/ox1111/CVE-2024-23334](https://github.com/ox1111/CVE-2024-23334) :  
-![starts](https://img.shields.io/github/stars/ox1111/CVE-2024-23334.svg) 
-![forks](https://img.shields.io/github/forks/ox1111/CVE-2024-23334.svg) 
-2024-02-29T02:00:16Z
-
-- [https://github.com/s4botai/CVE-2024-23334-PoC](https://github.com/s4botai/CVE-2024-23334-PoC) :  
-![starts](https://img.shields.io/github/stars/s4botai/CVE-2024-23334-PoC.svg) 
-![forks](https://img.shields.io/github/forks/s4botai/CVE-2024-23334-PoC.svg) 
-2024-09-08T10:49:44Z
-
-- [https://github.com/sxyrxyy/aiohttp-exploit-CVE-2024-23334-certstream](https://github.com/sxyrxyy/aiohttp-exploit-CVE-2024-23334-certstream) :  
-![starts](https://img.shields.io/github/stars/sxyrxyy/aiohttp-exploit-CVE-2024-23334-certstream.svg) 
-![forks](https://img.shields.io/github/forks/sxyrxyy/aiohttp-exploit-CVE-2024-23334-certstream.svg) 
-2024-03-18T12:25:54Z
-
-- [https://github.com/wizarddos/CVE-2024-23334](https://github.com/wizarddos/CVE-2024-23334) :  
-![starts](https://img.shields.io/github/stars/wizarddos/CVE-2024-23334.svg) 
-![forks](https://img.shields.io/github/forks/wizarddos/CVE-2024-23334.svg) 
-2024-10-20T16:48:53Z
-
-- [https://github.com/Betan423/CVE-2024-23334-PoC](https://github.com/Betan423/CVE-2024-23334-PoC) :  
-![starts](https://img.shields.io/github/stars/Betan423/CVE-2024-23334-PoC.svg) 
-![forks](https://img.shields.io/github/forks/Betan423/CVE-2024-23334-PoC.svg) 
-2024-12-09T09:25:16Z
-
-- [https://github.com/TheRedP4nther/LFI-aiohttp-CVE-2024-23334-PoC](https://github.com/TheRedP4nther/LFI-aiohttp-CVE-2024-23334-PoC) :  
-![starts](https://img.shields.io/github/stars/TheRedP4nther/LFI-aiohttp-CVE-2024-23334-PoC.svg) 
-![forks](https://img.shields.io/github/forks/TheRedP4nther/LFI-aiohttp-CVE-2024-23334-PoC.svg) 
-2025-03-16T13:22:26Z
-
-- [https://github.com/binaryninja/CVE-2024-23334](https://github.com/binaryninja/CVE-2024-23334) :  
-![starts](https://img.shields.io/github/stars/binaryninja/CVE-2024-23334.svg) 
-![forks](https://img.shields.io/github/forks/binaryninja/CVE-2024-23334.svg) 
-2024-06-17T16:37:11Z
-
-- [https://github.com/brian-edgar-re/poc-cve-2024-23334](https://github.com/brian-edgar-re/poc-cve-2024-23334) :  
-![starts](https://img.shields.io/github/stars/brian-edgar-re/poc-cve-2024-23334.svg) 
-![forks](https://img.shields.io/github/forks/brian-edgar-re/poc-cve-2024-23334.svg) 
-2024-04-29T01:40:19Z
-
-- [https://github.com/Pylonet/CVE-2024-23334](https://github.com/Pylonet/CVE-2024-23334) :  
-![starts](https://img.shields.io/github/stars/Pylonet/CVE-2024-23334.svg) 
-![forks](https://img.shields.io/github/forks/Pylonet/CVE-2024-23334.svg) 
-2024-11-24T14:33:37Z
-
-- [https://github.com/Arc4he/CVE-2024-23334-PoC](https://github.com/Arc4he/CVE-2024-23334-PoC) :  
-![starts](https://img.shields.io/github/stars/Arc4he/CVE-2024-23334-PoC.svg) 
-![forks](https://img.shields.io/github/forks/Arc4he/CVE-2024-23334-PoC.svg) 
-2024-11-09T14:18:02Z
-
-- [https://github.com/BestDevOfc/CVE-2024-23334-PoC](https://github.com/BestDevOfc/CVE-2024-23334-PoC) :  
-![starts](https://img.shields.io/github/stars/BestDevOfc/CVE-2024-23334-PoC.svg) 
-![forks](https://img.shields.io/github/forks/BestDevOfc/CVE-2024-23334-PoC.svg) 
-2024-12-27T11:21:36Z
+- [https://github.com/jmywh1/CVE-2024-31317](https://github.com/jmywh1/CVE-2024-31317) :  
+![starts](https://img.shields.io/github/stars/jmywh1/CVE-2024-31317.svg) 
+![forks](https://img.shields.io/github/forks/jmywh1/CVE-2024-31317.svg) 
+2025-03-17T04:09:09Z
 
 ## CVE-2024-8926
  In PHP versions 8.1.* before 8.1.30, 8.2.* before 8.2.24, 8.3.* before 8.3.12,when using a certain non-standard configurations of Windows codepages, the fixes for CVE-2024-4577 https://github.com/advisories/GHSA-vxpp-6299-mxw3 may still be bypassed and the same command injection related to Windows "Best Fit" codepage behavior can be achieved. Thismay allow a malicious user to pass options to PHP binary being run, and thus reveal the source code of scripts, run arbitrary PHP code on the server, etc.
@@ -127,7 +123,7 @@
 - [https://github.com/Night-have-dreams/php-cgi-Injector](https://github.com/Night-have-dreams/php-cgi-Injector) :  
 ![starts](https://img.shields.io/github/stars/Night-have-dreams/php-cgi-Injector.svg) 
 ![forks](https://img.shields.io/github/forks/Night-have-dreams/php-cgi-Injector.svg) 
-2025-03-16T13:16:31Z
+2025-03-17T16:02:07Z
 
 ## CVE-2024-7014
  EvilVideo vulnerability allows sending malicious apps disguised as videos in Telegram for Android application affecting  versions 10.14.4 and older.
@@ -140,7 +136,7 @@
 - [https://github.com/absholi7ly/PoC-for-CVE-2024-7014-Exploit](https://github.com/absholi7ly/PoC-for-CVE-2024-7014-Exploit) :  
 ![starts](https://img.shields.io/github/stars/absholi7ly/PoC-for-CVE-2024-7014-Exploit.svg) 
 ![forks](https://img.shields.io/github/forks/absholi7ly/PoC-for-CVE-2024-7014-Exploit.svg) 
-2025-03-16T04:31:00Z
+2025-03-17T03:48:24Z
 
 ## CVE-2024-4577
  In PHP versions8.1.* before 8.1.29, 8.2.* before 8.2.20, 8.3.* before 8.3.8, when using Apache and PHP-CGI on Windows, if the system is set up to use certain code pages, Windows may use "Best-Fit" behavior to replace characters in command line given toWin32 API functions. PHP CGI module may misinterpret those characters as PHP options, which may allow a malicious user to pass options to PHP binary being run, and thus reveal the source code of scripts, run arbitrary PHP code on the server, etc.
@@ -190,6 +186,11 @@
 ![forks](https://img.shields.io/github/forks/gh-ost00/CVE-2024-4577-RCE.svg) 
 2024-08-20T03:28:28Z
 
+- [https://github.com/Night-have-dreams/php-cgi-Injector](https://github.com/Night-have-dreams/php-cgi-Injector) :  
+![starts](https://img.shields.io/github/stars/Night-have-dreams/php-cgi-Injector.svg) 
+![forks](https://img.shields.io/github/forks/Night-have-dreams/php-cgi-Injector.svg) 
+2025-03-17T16:02:07Z
+
 - [https://github.com/gotr00t0day/CVE-2024-4577](https://github.com/gotr00t0day/CVE-2024-4577) :  
 ![starts](https://img.shields.io/github/stars/gotr00t0day/CVE-2024-4577.svg) 
 ![forks](https://img.shields.io/github/forks/gotr00t0day/CVE-2024-4577.svg) 
@@ -205,11 +206,6 @@
 ![forks](https://img.shields.io/github/forks/K3ysTr0K3R/CVE-2024-4577-EXPLOIT.svg) 
 2024-07-12T02:56:25Z
 
-- [https://github.com/Night-have-dreams/php-cgi-Injector](https://github.com/Night-have-dreams/php-cgi-Injector) :  
-![starts](https://img.shields.io/github/stars/Night-have-dreams/php-cgi-Injector.svg) 
-![forks](https://img.shields.io/github/forks/Night-have-dreams/php-cgi-Injector.svg) 
-2025-03-16T13:16:31Z
-
 - [https://github.com/l0n3m4n/CVE-2024-4577-RCE](https://github.com/l0n3m4n/CVE-2024-4577-RCE) :  
 ![starts](https://img.shields.io/github/stars/l0n3m4n/CVE-2024-4577-RCE.svg) 
 ![forks](https://img.shields.io/github/forks/l0n3m4n/CVE-2024-4577-RCE.svg) 
@@ -224,6 +220,11 @@
 ![starts](https://img.shields.io/github/stars/waived/CVE-2024-4577-PHP-RCE.svg) 
 ![forks](https://img.shields.io/github/forks/waived/CVE-2024-4577-PHP-RCE.svg) 
 2024-09-06T02:10:35Z
+
+- [https://github.com/zomasec/CVE-2024-4577](https://github.com/zomasec/CVE-2024-4577) :  
+![starts](https://img.shields.io/github/stars/zomasec/CVE-2024-4577.svg) 
+![forks](https://img.shields.io/github/forks/zomasec/CVE-2024-4577.svg) 
+2024-06-09T16:47:11Z
 
 - [https://github.com/0x20c/CVE-2024-4577-nuclei](https://github.com/0x20c/CVE-2024-4577-nuclei) :  
 ![starts](https://img.shields.io/github/stars/0x20c/CVE-2024-4577-nuclei.svg) 
@@ -260,11 +261,6 @@
 ![forks](https://img.shields.io/github/forks/VictorShem/CVE-2024-4577.svg) 
 2024-07-31T04:13:16Z
 
-- [https://github.com/zomasec/CVE-2024-4577](https://github.com/zomasec/CVE-2024-4577) :  
-![starts](https://img.shields.io/github/stars/zomasec/CVE-2024-4577.svg) 
-![forks](https://img.shields.io/github/forks/zomasec/CVE-2024-4577.svg) 
-2024-06-09T16:47:11Z
-
 - [https://github.com/Wh02m1/CVE-2024-4577](https://github.com/Wh02m1/CVE-2024-4577) :  
 ![starts](https://img.shields.io/github/stars/Wh02m1/CVE-2024-4577.svg) 
 ![forks](https://img.shields.io/github/forks/Wh02m1/CVE-2024-4577.svg) 
@@ -280,15 +276,15 @@
 ![forks](https://img.shields.io/github/forks/taida957789/CVE-2024-4577.svg) 
 2024-06-07T11:05:57Z
 
-- [https://github.com/ggfzx/CVE-2024-4577](https://github.com/ggfzx/CVE-2024-4577) :  
-![starts](https://img.shields.io/github/stars/ggfzx/CVE-2024-4577.svg) 
-![forks](https://img.shields.io/github/forks/ggfzx/CVE-2024-4577.svg) 
-2024-06-26T07:11:46Z
-
 - [https://github.com/AlperenY-cs/CVE-2024-4577](https://github.com/AlperenY-cs/CVE-2024-4577) :  
 ![starts](https://img.shields.io/github/stars/AlperenY-cs/CVE-2024-4577.svg) 
 ![forks](https://img.shields.io/github/forks/AlperenY-cs/CVE-2024-4577.svg) 
 2024-06-29T10:39:30Z
+
+- [https://github.com/ggfzx/CVE-2024-4577](https://github.com/ggfzx/CVE-2024-4577) :  
+![starts](https://img.shields.io/github/stars/ggfzx/CVE-2024-4577.svg) 
+![forks](https://img.shields.io/github/forks/ggfzx/CVE-2024-4577.svg) 
+2024-06-26T07:11:46Z
 
 - [https://github.com/nemu1k5ma/CVE-2024-4577](https://github.com/nemu1k5ma/CVE-2024-4577) :  
 ![starts](https://img.shields.io/github/stars/nemu1k5ma/CVE-2024-4577.svg) 
@@ -340,15 +336,10 @@
 ![forks](https://img.shields.io/github/forks/Dejavu666/CVE-2024-4577.svg) 
 2025-01-08T11:17:23Z
 
-- [https://github.com/chihyeonwon/php-cgi-cve-2024-4577](https://github.com/chihyeonwon/php-cgi-cve-2024-4577) :  
-![starts](https://img.shields.io/github/stars/chihyeonwon/php-cgi-cve-2024-4577.svg) 
-![forks](https://img.shields.io/github/forks/chihyeonwon/php-cgi-cve-2024-4577.svg) 
+- [https://github.com/mr-won/php-cgi-cve-2024-4577](https://github.com/mr-won/php-cgi-cve-2024-4577) :  
+![starts](https://img.shields.io/github/stars/mr-won/php-cgi-cve-2024-4577.svg) 
+![forks](https://img.shields.io/github/forks/mr-won/php-cgi-cve-2024-4577.svg) 
 2025-02-14T11:16:39Z
-
-- [https://github.com/Sysc4ll3r/CVE-2024-4577](https://github.com/Sysc4ll3r/CVE-2024-4577) :  
-![starts](https://img.shields.io/github/stars/Sysc4ll3r/CVE-2024-4577.svg) 
-![forks](https://img.shields.io/github/forks/Sysc4ll3r/CVE-2024-4577.svg) 
-2024-06-07T18:41:17Z
 
 - [https://github.com/sug4r-wr41th/CVE-2024-4577](https://github.com/sug4r-wr41th/CVE-2024-4577) :  
 ![starts](https://img.shields.io/github/stars/sug4r-wr41th/CVE-2024-4577.svg) 
@@ -365,16 +356,6 @@
 ![forks](https://img.shields.io/github/forks/princew88/CVE-2024-4577.svg) 
 2024-06-07T09:48:36Z
 
-- [https://github.com/dbyMelina/CVE-2024-4577](https://github.com/dbyMelina/CVE-2024-4577) :  
-![starts](https://img.shields.io/github/stars/dbyMelina/CVE-2024-4577.svg) 
-![forks](https://img.shields.io/github/forks/dbyMelina/CVE-2024-4577.svg) 
-2024-06-09T13:47:59Z
-
-- [https://github.com/bl4cksku11/CVE-2024-4577](https://github.com/bl4cksku11/CVE-2024-4577) :  
-![starts](https://img.shields.io/github/stars/bl4cksku11/CVE-2024-4577.svg) 
-![forks](https://img.shields.io/github/forks/bl4cksku11/CVE-2024-4577.svg) 
-2024-06-11T15:29:21Z
-
 - [https://github.com/a-roshbaik/CVE-2024-4577](https://github.com/a-roshbaik/CVE-2024-4577) :  
 ![starts](https://img.shields.io/github/stars/a-roshbaik/CVE-2024-4577.svg) 
 ![forks](https://img.shields.io/github/forks/a-roshbaik/CVE-2024-4577.svg) 
@@ -384,6 +365,21 @@
 ![starts](https://img.shields.io/github/stars/Jcccccx/CVE-2024-4577.svg) 
 ![forks](https://img.shields.io/github/forks/Jcccccx/CVE-2024-4577.svg) 
 2024-07-31T10:37:56Z
+
+- [https://github.com/Sysc4ll3r/CVE-2024-4577](https://github.com/Sysc4ll3r/CVE-2024-4577) :  
+![starts](https://img.shields.io/github/stars/Sysc4ll3r/CVE-2024-4577.svg) 
+![forks](https://img.shields.io/github/forks/Sysc4ll3r/CVE-2024-4577.svg) 
+2024-06-07T18:41:17Z
+
+- [https://github.com/bl4cksku11/CVE-2024-4577](https://github.com/bl4cksku11/CVE-2024-4577) :  
+![starts](https://img.shields.io/github/stars/bl4cksku11/CVE-2024-4577.svg) 
+![forks](https://img.shields.io/github/forks/bl4cksku11/CVE-2024-4577.svg) 
+2024-06-11T15:29:21Z
+
+- [https://github.com/dbyMelina/CVE-2024-4577](https://github.com/dbyMelina/CVE-2024-4577) :  
+![starts](https://img.shields.io/github/stars/dbyMelina/CVE-2024-4577.svg) 
+![forks](https://img.shields.io/github/forks/dbyMelina/CVE-2024-4577.svg) 
+2024-06-09T13:47:59Z
 
 - [https://github.com/ahmetramazank/CVE-2024-4577](https://github.com/ahmetramazank/CVE-2024-4577) :  
 ![starts](https://img.shields.io/github/stars/ahmetramazank/CVE-2024-4577.svg) 
@@ -430,35 +426,112 @@
 ![forks](https://img.shields.io/github/forks/AhmedMansour93/Event-ID-268-Rule-Name-SOC292-Possible-PHP-Injection-Detected-CVE-2024-4577-.svg) 
 2024-09-12T19:13:37Z
 
+# 2025-03-16
+## CVE-2025-22604
+ Cacti is an open source performance and fault management framework. Due to a flaw in multi-line SNMP result parser, authenticated users can inject malformed OIDs in the response. When processed by ss_net_snmp_disk_io() or ss_net_snmp_disk_bytes(), a part of each OID will be used as a key in an array that is used as part of a system command, causing a command execution vulnerability. This vulnerability is fixed in 1.2.29.
+
+- [https://github.com/ishwardeepp/CVE-2025-22604-Cacti-RCE](https://github.com/ishwardeepp/CVE-2025-22604-Cacti-RCE) :  
+![starts](https://img.shields.io/github/stars/ishwardeepp/CVE-2025-22604-Cacti-RCE.svg) 
+![forks](https://img.shields.io/github/forks/ishwardeepp/CVE-2025-22604-Cacti-RCE.svg) 
+2025-03-16T09:21:50Z
+
+## CVE-2024-23334
+ aiohttp is an asynchronous HTTP client/server framework for asyncio and Python. When using aiohttp as a web server and configuring static routes, it is necessary to specify the root path for static files. Additionally, the option 'follow_symlinks' can be used to determine whether to follow symbolic links outside the static root directory. When 'follow_symlinks' is set to True, there is no validation to check if reading a file is within the root directory. This can lead to directory traversal vulnerabilities, resulting in unauthorized access to arbitrary files on the system, even when symlinks are not present.  Disabling follow_symlinks and using a reverse proxy are encouraged mitigations.  Version 3.9.2 fixes this issue.
+
+- [https://github.com/jhonnybonny/CVE-2024-23334](https://github.com/jhonnybonny/CVE-2024-23334) :  
+![starts](https://img.shields.io/github/stars/jhonnybonny/CVE-2024-23334.svg) 
+![forks](https://img.shields.io/github/forks/jhonnybonny/CVE-2024-23334.svg) 
+2024-03-19T17:06:26Z
+
+- [https://github.com/z3rObyte/CVE-2024-23334-PoC](https://github.com/z3rObyte/CVE-2024-23334-PoC) :  
+![starts](https://img.shields.io/github/stars/z3rObyte/CVE-2024-23334-PoC.svg) 
+![forks](https://img.shields.io/github/forks/z3rObyte/CVE-2024-23334-PoC.svg) 
+2024-03-19T06:37:30Z
+
+- [https://github.com/ox1111/CVE-2024-23334](https://github.com/ox1111/CVE-2024-23334) :  
+![starts](https://img.shields.io/github/stars/ox1111/CVE-2024-23334.svg) 
+![forks](https://img.shields.io/github/forks/ox1111/CVE-2024-23334.svg) 
+2024-02-29T02:00:16Z
+
+- [https://github.com/s4botai/CVE-2024-23334-PoC](https://github.com/s4botai/CVE-2024-23334-PoC) :  
+![starts](https://img.shields.io/github/stars/s4botai/CVE-2024-23334-PoC.svg) 
+![forks](https://img.shields.io/github/forks/s4botai/CVE-2024-23334-PoC.svg) 
+2024-09-08T10:49:44Z
+
+- [https://github.com/sxyrxyy/aiohttp-exploit-CVE-2024-23334-certstream](https://github.com/sxyrxyy/aiohttp-exploit-CVE-2024-23334-certstream) :  
+![starts](https://img.shields.io/github/stars/sxyrxyy/aiohttp-exploit-CVE-2024-23334-certstream.svg) 
+![forks](https://img.shields.io/github/forks/sxyrxyy/aiohttp-exploit-CVE-2024-23334-certstream.svg) 
+2024-03-18T12:25:54Z
+
+- [https://github.com/wizarddos/CVE-2024-23334](https://github.com/wizarddos/CVE-2024-23334) :  
+![starts](https://img.shields.io/github/stars/wizarddos/CVE-2024-23334.svg) 
+![forks](https://img.shields.io/github/forks/wizarddos/CVE-2024-23334.svg) 
+2024-10-20T16:48:53Z
+
+- [https://github.com/Betan423/CVE-2024-23334-PoC](https://github.com/Betan423/CVE-2024-23334-PoC) :  
+![starts](https://img.shields.io/github/stars/Betan423/CVE-2024-23334-PoC.svg) 
+![forks](https://img.shields.io/github/forks/Betan423/CVE-2024-23334-PoC.svg) 
+2024-12-09T09:25:16Z
+
+- [https://github.com/TheRedP4nther/LFI-aiohttp-CVE-2024-23334-PoC](https://github.com/TheRedP4nther/LFI-aiohttp-CVE-2024-23334-PoC) :  
+![starts](https://img.shields.io/github/stars/TheRedP4nther/LFI-aiohttp-CVE-2024-23334-PoC.svg) 
+![forks](https://img.shields.io/github/forks/TheRedP4nther/LFI-aiohttp-CVE-2024-23334-PoC.svg) 
+2025-03-16T13:22:26Z
+
+- [https://github.com/Pylonet/CVE-2024-23334](https://github.com/Pylonet/CVE-2024-23334) :  
+![starts](https://img.shields.io/github/stars/Pylonet/CVE-2024-23334.svg) 
+![forks](https://img.shields.io/github/forks/Pylonet/CVE-2024-23334.svg) 
+2024-11-24T14:33:37Z
+
+- [https://github.com/brian-edgar-re/poc-cve-2024-23334](https://github.com/brian-edgar-re/poc-cve-2024-23334) :  
+![starts](https://img.shields.io/github/stars/brian-edgar-re/poc-cve-2024-23334.svg) 
+![forks](https://img.shields.io/github/forks/brian-edgar-re/poc-cve-2024-23334.svg) 
+2024-04-29T01:40:19Z
+
+- [https://github.com/binaryninja/CVE-2024-23334](https://github.com/binaryninja/CVE-2024-23334) :  
+![starts](https://img.shields.io/github/stars/binaryninja/CVE-2024-23334.svg) 
+![forks](https://img.shields.io/github/forks/binaryninja/CVE-2024-23334.svg) 
+2024-06-17T16:37:11Z
+
+- [https://github.com/BestDevOfc/CVE-2024-23334-PoC](https://github.com/BestDevOfc/CVE-2024-23334-PoC) :  
+![starts](https://img.shields.io/github/stars/BestDevOfc/CVE-2024-23334-PoC.svg) 
+![forks](https://img.shields.io/github/forks/BestDevOfc/CVE-2024-23334-PoC.svg) 
+2024-12-27T11:21:36Z
+
+- [https://github.com/Arc4he/CVE-2024-23334-PoC](https://github.com/Arc4he/CVE-2024-23334-PoC) :  
+![starts](https://img.shields.io/github/stars/Arc4he/CVE-2024-23334-PoC.svg) 
+![forks](https://img.shields.io/github/forks/Arc4he/CVE-2024-23334-PoC.svg) 
+2024-11-09T14:18:02Z
+
+## CVE-2024-9047
+ The WordPress File Upload plugin for WordPress is vulnerable to Path Traversal in all versions up to, and including, 4.24.11 via wfu_file_downloader.php. This makes it possible for unauthenticated attackers to read or delete files outside of the originally intended directory. Successful exploitation requires the targeted WordPress installation to be using PHP 7.4 or earlier.
+
+- [https://github.com/peiqiF4ck/WebFrameworkTools-5.1-main](https://github.com/peiqiF4ck/WebFrameworkTools-5.1-main) :  
+![starts](https://img.shields.io/github/stars/peiqiF4ck/WebFrameworkTools-5.1-main.svg) 
+![forks](https://img.shields.io/github/forks/peiqiF4ck/WebFrameworkTools-5.1-main.svg) 
+2025-02-07T12:43:37Z
+
+- [https://github.com/verylazytech/CVE-2024-9047](https://github.com/verylazytech/CVE-2024-9047) :  
+![starts](https://img.shields.io/github/stars/verylazytech/CVE-2024-9047.svg) 
+![forks](https://img.shields.io/github/forks/verylazytech/CVE-2024-9047.svg) 
+2025-01-08T07:36:19Z
+
+- [https://github.com/iSee857/CVE-2024-9047-PoC](https://github.com/iSee857/CVE-2024-9047-PoC) :  
+![starts](https://img.shields.io/github/stars/iSee857/CVE-2024-9047-PoC.svg) 
+![forks](https://img.shields.io/github/forks/iSee857/CVE-2024-9047-PoC.svg) 
+2024-12-25T05:28:55Z
+
+- [https://github.com/Nxploited/CVE-2024-9047-Exploit](https://github.com/Nxploited/CVE-2024-9047-Exploit) :  
+![starts](https://img.shields.io/github/stars/Nxploited/CVE-2024-9047-Exploit.svg) 
+![forks](https://img.shields.io/github/forks/Nxploited/CVE-2024-9047-Exploit.svg) 
+2025-01-25T03:20:25Z
+
+- [https://github.com/mr-won/CVE-2024-9047](https://github.com/mr-won/CVE-2024-9047) :  
+![starts](https://img.shields.io/github/stars/mr-won/CVE-2024-9047.svg) 
+![forks](https://img.shields.io/github/forks/mr-won/CVE-2024-9047.svg) 
+2025-03-16T18:07:11Z
+
 # 2025-03-15
-## CVE-2025-24813
- Path Equivalence: 'file.Name' (Internal Dot) leading toRemote Code Execution and/or Information disclosureand/or malicious content added to uploaded files via write enabledDefault Servletin Apache Tomcat.This issue affects Apache Tomcat: from 11.0.0-M1 through 11.0.2, from 10.1.0-M1 through 10.1.34, from 9.0.0.M1 through 9.0.98.If all of the following were true, a malicious user was able to view       security sensitive files and/or inject content into those files:-writes enabled for the default servlet (disabled by default)- support for partial PUT (enabled by default)- a target URL for security sensitive uploads that was a sub-directory ofa target URL for public uploads-attacker knowledge of the names of security sensitive files beinguploaded-the security sensitive files also being uploaded via partial PUTIf all of the following were true, a malicious user was able to       perform remote code execution:- writes enabled for the default servlet (disabled by default)-support for partial PUT (enabled by default)-application was using Tomcat's file based session persistence with thedefault storage location-application included a library that may be leveraged in adeserialization attackUsers are recommended to upgrade to version 11.0.3, 10.1.35 or 9.0.98, which fixes the issue.
-
-- [https://github.com/iSee857/CVE-2025-24813-PoC](https://github.com/iSee857/CVE-2025-24813-PoC) :  
-![starts](https://img.shields.io/github/stars/iSee857/CVE-2025-24813-PoC.svg) 
-![forks](https://img.shields.io/github/forks/iSee857/CVE-2025-24813-PoC.svg) 
-2025-03-13T10:06:35Z
-
-- [https://github.com/absholi7ly/POC-CVE-2025-24813](https://github.com/absholi7ly/POC-CVE-2025-24813) :  
-![starts](https://img.shields.io/github/stars/absholi7ly/POC-CVE-2025-24813.svg) 
-![forks](https://img.shields.io/github/forks/absholi7ly/POC-CVE-2025-24813.svg) 
-2025-03-14T07:57:27Z
-
-- [https://github.com/FY036/cve-2025-24813_poc](https://github.com/FY036/cve-2025-24813_poc) :  
-![starts](https://img.shields.io/github/stars/FY036/cve-2025-24813_poc.svg) 
-![forks](https://img.shields.io/github/forks/FY036/cve-2025-24813_poc.svg) 
-2025-03-14T08:04:00Z
-
-- [https://github.com/N0c1or/CVE-2025-24813_POC](https://github.com/N0c1or/CVE-2025-24813_POC) :  
-![starts](https://img.shields.io/github/stars/N0c1or/CVE-2025-24813_POC.svg) 
-![forks](https://img.shields.io/github/forks/N0c1or/CVE-2025-24813_POC.svg) 
-2025-03-15T22:08:29Z
-
-- [https://github.com/gregk4sec/CVE-2025-24813](https://github.com/gregk4sec/CVE-2025-24813) :  
-![starts](https://img.shields.io/github/stars/gregk4sec/CVE-2025-24813.svg) 
-![forks](https://img.shields.io/github/forks/gregk4sec/CVE-2025-24813.svg) 
-2025-03-14T07:47:24Z
-
 ## CVE-2024-51788
  Unrestricted Upload of File with Dangerous Type vulnerability in Joshua Wolfe The Novel Design Store Directory allows Upload a Web Shell to a Web Server.This issue affects The Novel Design Store Directory: from n/a through 4.3.0.
 
@@ -1620,189 +1693,4 @@
 ![starts](https://img.shields.io/github/stars/sec13b/CVE-2024-5806.svg) 
 ![forks](https://img.shields.io/github/forks/sec13b/CVE-2024-5806.svg) 
 2025-03-08T20:54:22Z
-
-# 2025-03-07
-## CVE-2025-26326
- A vulnerability was identified in the NVDA Remote (version 2.6.4) and Tele NVDA Remote (version 2025.3.3) remote connection add-ons, which allows an attacker to obtain total control of the remote system by guessing a weak password. The problem occurs because these add-ons accept any password entered by the user and do not have an additional authentication or computer verification mechanism. Tests indicate that more than 1,000 systems use easy-to-guess passwords, many with less than 4 to 6 characters, including common sequences. This allows brute force attacks or trial-and-error attempts by malicious invaders. The vulnerability can be exploited by a remote attacker who knows or can guess the password used in the connection. As a result, the attacker gains complete access to the affected system and can execute commands, modify files, and compromise user security.
-
-- [https://github.com/azurejoga/CVE-2025-26326](https://github.com/azurejoga/CVE-2025-26326) :  
-![starts](https://img.shields.io/github/stars/azurejoga/CVE-2025-26326.svg) 
-![forks](https://img.shields.io/github/forks/azurejoga/CVE-2025-26326.svg) 
-2025-03-07T20:02:37Z
-
-## CVE-2025-25749
- An issue in HotelDruid version 3.0.7 and earlier allows users to set weak passwords due to the lack of enforcement of password strength policies.
-
-- [https://github.com/huyvo2910/CVE-2025-25749-Weak-Password-Policy-in-HotelDruid-3.0.7](https://github.com/huyvo2910/CVE-2025-25749-Weak-Password-Policy-in-HotelDruid-3.0.7) :  
-![starts](https://img.shields.io/github/stars/huyvo2910/CVE-2025-25749-Weak-Password-Policy-in-HotelDruid-3.0.7.svg) 
-![forks](https://img.shields.io/github/forks/huyvo2910/CVE-2025-25749-Weak-Password-Policy-in-HotelDruid-3.0.7.svg) 
-2025-03-07T12:34:43Z
-
-## CVE-2025-25748
- A CSRF vulnerability in the gestione_utenti.php endpoint of HotelDruid 3.0.7 allows attackers to perform unauthorized actions (e.g., modifying user passwords) on behalf of authenticated users by exploiting the lack of origin or referrer validation and the absence of CSRF tokens. NOTE: this is disputed because there is an id_sessione CSRF token.
-
-- [https://github.com/huyvo2910/CVE-2525-25748-Cross-Site-Request-Forgery-CSRF-Vulnerability-in-HotelDruid-3.0.7](https://github.com/huyvo2910/CVE-2525-25748-Cross-Site-Request-Forgery-CSRF-Vulnerability-in-HotelDruid-3.0.7) :  
-![starts](https://img.shields.io/github/stars/huyvo2910/CVE-2525-25748-Cross-Site-Request-Forgery-CSRF-Vulnerability-in-HotelDruid-3.0.7.svg) 
-![forks](https://img.shields.io/github/forks/huyvo2910/CVE-2525-25748-Cross-Site-Request-Forgery-CSRF-Vulnerability-in-HotelDruid-3.0.7.svg) 
-2025-03-07T12:33:50Z
-
-## CVE-2025-25747
- Cross Site Scripting vulnerability in DigitalDruid HotelDruid v.3.0.7 allows an attacker to execute arbitrary code and obtain sensitive information via the ripristina_backup parameter in the crea_backup.php endpoint
-
-- [https://github.com/huyvo2910/CVE-2025-25747-HotelDruid-3-0-7-Reflected-XSS](https://github.com/huyvo2910/CVE-2025-25747-HotelDruid-3-0-7-Reflected-XSS) :  
-![starts](https://img.shields.io/github/stars/huyvo2910/CVE-2025-25747-HotelDruid-3-0-7-Reflected-XSS.svg) 
-![forks](https://img.shields.io/github/forks/huyvo2910/CVE-2025-25747-HotelDruid-3-0-7-Reflected-XSS.svg) 
-2025-03-07T12:31:04Z
-
-## CVE-2025-25620
- Unifiedtransform 2.0 is vulnerable to Cross Site Scripting (XSS) in the Create assignment function.
-
-- [https://github.com/armaansidana2003/CVE-2025-25620](https://github.com/armaansidana2003/CVE-2025-25620) :  
-![starts](https://img.shields.io/github/stars/armaansidana2003/CVE-2025-25620.svg) 
-![forks](https://img.shields.io/github/forks/armaansidana2003/CVE-2025-25620.svg) 
-2025-03-07T23:17:52Z
-
-## CVE-2025-25617
- Incorrect Access Control in Unifiedtransform 2.X leads to Privilege Escalation allowing teachers to create syllabus.
-
-- [https://github.com/armaansidana2003/CVE-2025-25617](https://github.com/armaansidana2003/CVE-2025-25617) :  
-![starts](https://img.shields.io/github/stars/armaansidana2003/CVE-2025-25617.svg) 
-![forks](https://img.shields.io/github/forks/armaansidana2003/CVE-2025-25617.svg) 
-2025-03-07T23:17:28Z
-
-## CVE-2025-25616
- Unifiedtransform 2.0 is vulnerable to Incorrect Access Control, which allows students to modify rules for exams. The affected endpoint is /exams/edit-rule?exam_rule_id=1.
-
-- [https://github.com/armaansidana2003/CVE-2025-25616](https://github.com/armaansidana2003/CVE-2025-25616) :  
-![starts](https://img.shields.io/github/stars/armaansidana2003/CVE-2025-25616.svg) 
-![forks](https://img.shields.io/github/forks/armaansidana2003/CVE-2025-25616.svg) 
-2025-03-07T23:17:16Z
-
-## CVE-2025-25615
- Unifiedtransform 2.0 is vulnerable to Incorrect Access Control which allows viewing attendance list for all class sections.
-
-- [https://github.com/armaansidana2003/CVE-2025-25615](https://github.com/armaansidana2003/CVE-2025-25615) :  
-![starts](https://img.shields.io/github/stars/armaansidana2003/CVE-2025-25615.svg) 
-![forks](https://img.shields.io/github/forks/armaansidana2003/CVE-2025-25615.svg) 
-2025-03-07T23:16:53Z
-
-## CVE-2025-25614
- Incorrect Access Control in Unifiedtransform 2.0 leads to Privilege Escalation, which allows teachers to update the personal data of fellow teachers.
-
-- [https://github.com/armaansidana2003/CVE-2025-25614](https://github.com/armaansidana2003/CVE-2025-25614) :  
-![starts](https://img.shields.io/github/stars/armaansidana2003/CVE-2025-25614.svg) 
-![forks](https://img.shields.io/github/forks/armaansidana2003/CVE-2025-25614.svg) 
-2025-03-07T23:15:13Z
-
-## CVE-2025-21298
- Windows OLE Remote Code Execution Vulnerability
-
-- [https://github.com/ynwarcs/CVE-2025-21298](https://github.com/ynwarcs/CVE-2025-21298) :  
-![starts](https://img.shields.io/github/stars/ynwarcs/CVE-2025-21298.svg) 
-![forks](https://img.shields.io/github/forks/ynwarcs/CVE-2025-21298.svg) 
-2025-01-20T18:22:01Z
-
-- [https://github.com/Dit-Developers/CVE-2025-21298](https://github.com/Dit-Developers/CVE-2025-21298) :  
-![starts](https://img.shields.io/github/stars/Dit-Developers/CVE-2025-21298.svg) 
-![forks](https://img.shields.io/github/forks/Dit-Developers/CVE-2025-21298.svg) 
-2025-03-07T17:20:38Z
-
-## CVE-2024-57972
- The pairing API request handler in Microsoft HoloLens 1 (Windows Holographic) through 10.0.17763.3046 and HoloLens 2 (Windows Holographic) through 10.0.22621.1244 allows remote attackers to cause a Denial of Service (resource consumption and device unusability) by sending many requests through the Device Portal framework.
-
-- [https://github.com/tania-silva/CVE-2024-57972](https://github.com/tania-silva/CVE-2024-57972) :  
-![starts](https://img.shields.io/github/stars/tania-silva/CVE-2024-57972.svg) 
-![forks](https://img.shields.io/github/forks/tania-silva/CVE-2024-57972.svg) 
-2025-03-07T12:07:11Z
-
-## CVE-2023-50164
- An attacker can manipulate file upload params to enable paths traversal and under some circumstances this can lead to uploading a malicious file which can be used to perform Remote Code Execution.Users are recommended to upgrade to versions Struts 2.5.33 or Struts 6.3.0.2 or greater tofix this issue.
-
-- [https://github.com/heavyyeast/cve-2023-50164-poc](https://github.com/heavyyeast/cve-2023-50164-poc) :  
-![starts](https://img.shields.io/github/stars/heavyyeast/cve-2023-50164-poc.svg) 
-![forks](https://img.shields.io/github/forks/heavyyeast/cve-2023-50164-poc.svg) 
-2025-03-05T12:56:18Z
-
-- [https://github.com/jakabakos/CVE-2023-50164-Apache-Struts-RCE](https://github.com/jakabakos/CVE-2023-50164-Apache-Struts-RCE) :  
-![starts](https://img.shields.io/github/stars/jakabakos/CVE-2023-50164-Apache-Struts-RCE.svg) 
-![forks](https://img.shields.io/github/forks/jakabakos/CVE-2023-50164-Apache-Struts-RCE.svg) 
-2024-08-30T06:37:53Z
-
-- [https://github.com/dwisiswant0/cve-2023-50164-poc](https://github.com/dwisiswant0/cve-2023-50164-poc) :  
-![starts](https://img.shields.io/github/stars/dwisiswant0/cve-2023-50164-poc.svg) 
-![forks](https://img.shields.io/github/forks/dwisiswant0/cve-2023-50164-poc.svg) 
-2023-12-18T02:46:21Z
-
-- [https://github.com/Trackflaw/CVE-2023-50164-ApacheStruts2-Docker](https://github.com/Trackflaw/CVE-2023-50164-ApacheStruts2-Docker) :  
-![starts](https://img.shields.io/github/stars/Trackflaw/CVE-2023-50164-ApacheStruts2-Docker.svg) 
-![forks](https://img.shields.io/github/forks/Trackflaw/CVE-2023-50164-ApacheStruts2-Docker.svg) 
-2023-12-20T12:57:28Z
-
-- [https://github.com/snyk-labs/CVE-2023-50164-POC](https://github.com/snyk-labs/CVE-2023-50164-POC) :  
-![starts](https://img.shields.io/github/stars/snyk-labs/CVE-2023-50164-POC.svg) 
-![forks](https://img.shields.io/github/forks/snyk-labs/CVE-2023-50164-POC.svg) 
-2024-01-16T14:59:23Z
-
-- [https://github.com/bcdannyboy/CVE-2023-50164](https://github.com/bcdannyboy/CVE-2023-50164) :  
-![starts](https://img.shields.io/github/stars/bcdannyboy/CVE-2023-50164.svg) 
-![forks](https://img.shields.io/github/forks/bcdannyboy/CVE-2023-50164.svg) 
-2023-12-15T23:50:17Z
-
-- [https://github.com/sunnyvale-it/CVE-2023-50164-PoC](https://github.com/sunnyvale-it/CVE-2023-50164-PoC) :  
-![starts](https://img.shields.io/github/stars/sunnyvale-it/CVE-2023-50164-PoC.svg) 
-![forks](https://img.shields.io/github/forks/sunnyvale-it/CVE-2023-50164-PoC.svg) 
-2024-01-16T13:05:54Z
-
-- [https://github.com/Pixel-DefaultBR/CVE-2023-50164](https://github.com/Pixel-DefaultBR/CVE-2023-50164) :  
-![starts](https://img.shields.io/github/stars/Pixel-DefaultBR/CVE-2023-50164.svg) 
-![forks](https://img.shields.io/github/forks/Pixel-DefaultBR/CVE-2023-50164.svg) 
-2025-03-07T16:29:32Z
-
-- [https://github.com/helsecert/cve-2023-50164](https://github.com/helsecert/cve-2023-50164) :  
-![starts](https://img.shields.io/github/stars/helsecert/cve-2023-50164.svg) 
-![forks](https://img.shields.io/github/forks/helsecert/cve-2023-50164.svg) 
-2023-12-18T13:29:47Z
-
-- [https://github.com/aaronm-sysdig/cve-2023-50164](https://github.com/aaronm-sysdig/cve-2023-50164) :  
-![starts](https://img.shields.io/github/stars/aaronm-sysdig/cve-2023-50164.svg) 
-![forks](https://img.shields.io/github/forks/aaronm-sysdig/cve-2023-50164.svg) 
-2024-01-01T03:25:58Z
-
-- [https://github.com/NikitaPark/CVE-2023-50164-PoC](https://github.com/NikitaPark/CVE-2023-50164-PoC) :  
-![starts](https://img.shields.io/github/stars/NikitaPark/CVE-2023-50164-PoC.svg) 
-![forks](https://img.shields.io/github/forks/NikitaPark/CVE-2023-50164-PoC.svg) 
-2024-10-09T11:18:48Z
-
-- [https://github.com/Thirukrishnan/CVE-2023-50164-Apache-Struts-RCE](https://github.com/Thirukrishnan/CVE-2023-50164-Apache-Struts-RCE) :  
-![starts](https://img.shields.io/github/stars/Thirukrishnan/CVE-2023-50164-Apache-Struts-RCE.svg) 
-![forks](https://img.shields.io/github/forks/Thirukrishnan/CVE-2023-50164-Apache-Struts-RCE.svg) 
-2023-12-20T09:51:45Z
-
-- [https://github.com/Trackflaw/CVE-2024-10924-Wordpress-Docker](https://github.com/Trackflaw/CVE-2024-10924-Wordpress-Docker) :  
-![starts](https://img.shields.io/github/stars/Trackflaw/CVE-2024-10924-Wordpress-Docker.svg) 
-![forks](https://img.shields.io/github/forks/Trackflaw/CVE-2024-10924-Wordpress-Docker.svg) 
-2024-11-22T09:28:08Z
-
-- [https://github.com/minhbao15677/CVE-2023-50164](https://github.com/minhbao15677/CVE-2023-50164) :  
-![starts](https://img.shields.io/github/stars/minhbao15677/CVE-2023-50164.svg) 
-![forks](https://img.shields.io/github/forks/minhbao15677/CVE-2023-50164.svg) 
-2024-04-26T02:52:42Z
-
-- [https://github.com/miles3719/cve-2023-50164](https://github.com/miles3719/cve-2023-50164) :  
-![starts](https://img.shields.io/github/stars/miles3719/cve-2023-50164.svg) 
-![forks](https://img.shields.io/github/forks/miles3719/cve-2023-50164.svg) 
-2023-12-22T02:15:36Z
-
-- [https://github.com/AsfandAliMemon25/CVE-2023-50164Analysis-](https://github.com/AsfandAliMemon25/CVE-2023-50164Analysis-) :  
-![starts](https://img.shields.io/github/stars/AsfandAliMemon25/CVE-2023-50164Analysis-.svg) 
-![forks](https://img.shields.io/github/forks/AsfandAliMemon25/CVE-2023-50164Analysis-.svg) 
-2024-04-16T17:09:20Z
-
-## CVE-2021-37787
- The unprivileged administrative interface in ABO.CMS version 5.8 through v.5.9.3 is affected by a SQL Injection vulnerability via a HTTP POST request to the TinyMCE module
-
-- [https://github.com/vasykor/CVE-2021-37787](https://github.com/vasykor/CVE-2021-37787) :  
-![starts](https://img.shields.io/github/stars/vasykor/CVE-2021-37787.svg) 
-![forks](https://img.shields.io/github/forks/vasykor/CVE-2021-37787.svg) 
-2025-03-07T18:54:28Z
 
